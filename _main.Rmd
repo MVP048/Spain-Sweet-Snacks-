@@ -1,0 +1,2039 @@
+--- 
+title: "SPAIN: Sweet Biscuits, Snack Bars and Fruit Snacks"
+output:
+  bookdown::gitbook:
+    includes:
+      in_header: "/Users/maevepizzolon/Spain: Sweet Biscuits, Snack Bars and Fruit Snacks/header.html"
+    config:
+      code_folding: hide 
+  bookdown::html_document2:
+    includes:
+      in_header: "/Users/maevepizzolon/Spain: Sweet Biscuits, Snack Bars and Fruit Snacks/header.html"  # Include header.html for code folding
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+description: |
+  This is a minimal example of using the bookdown package to write a book.
+  The HTML output format for this example is bookdown::gitbook,
+  set in the _output.yml file.
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+---
+```{r, results='hide', message=FALSE, warning=FALSE, echo=FALSE}
+library(readr)
+
+# Reading JavaScript files
+codejs <- read_lines("/Users/maevepizzolon/Spain: Sweet Biscuits, Snack Bars and Fruit Snacks/js/codefolding.js")
+collapsejs <- read_lines("/Users/maevepizzolon/Spain: Sweet Biscuits, Snack Bars and Fruit Snacks/js/collapse.js")
+transitionjs <- read_lines("/Users/maevepizzolon/Spain: Sweet Biscuits, Snack Bars and Fruit Snacks/js/transition.js")
+dropdownjs <- read_lines("/Users/maevepizzolon/Spain: Sweet Biscuits, Snack Bars and Fruit Snacks/js/dropdown.js")
+
+
+htmlhead <- c(
+  '<script>',
+  paste(transitionjs, collapse = "\n"),
+  '</script>',
+  '<script>',
+  paste(collapsejs, collapse = "\n"),
+  '</script>',
+  '<script>',
+  paste(codejs, collapse = "\n"),
+  '</script>',
+  '<script>',
+  paste(dropdownjs, collapse = "\n"),
+  '</script>',
+  '<style type="text/css">',
+  '.code-folding-btn { margin-bottom: 4px; }',
+  '.row { display: flex; }',
+  '.collapse { display: none; }',
+  '.in { display: block; }',
+  '.pull-right > .dropdown-menu { right: 0; left: auto; }',
+  '.open > .dropdown-menu { display: block; }',
+  '.dropdown-menu {',
+  '    position: absolute;',
+  '    top: 100%;',
+  '    left: 0;',
+  '    z-index: 1000;',
+  '    display: none;',
+  '    float: left;',
+  '    min-width: 160px;',
+  '    padding: 5px 0;',
+  '    margin: 2px 0 0;',
+  '    font-size: 14px;',
+  '    text-align: left;',
+  '    list-style: none;',
+  '    background-color: #fff;',
+  '    -webkit-background-clip: padding-box;',
+  '    background-clip: padding-box;',
+  '    border: 1px solid #ccc;',
+  '    border: 1px solid rgba(0,0,0,.15);',
+  '    border-radius: 4px;',
+  '    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);',
+  '    box-shadow: 0 6px 12px rgba(0,0,0,.175);',
+  '}',
+  '#code-button-container { position: fixed !important; top: 10px; right: 10px; z-index: 200; }',
+  '</style>',
+  '<script>',
+  '$(document).ready(function () {',
+  'window.initializeCodeFolding(false);',
+'});',
+  '</script>',
+  '<script>',
+  'document.write(\'<div class="btn-group pull-right" style="position: absolute; top: 10px; right: 10px; z-index: 200">',
+  '  <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-_extension-text-contrast="">',
+  '    <span>Code</span> <span class="caret"></span>',
+  '  </button>',
+  '  <ul class="dropdown-menu" style="min-width: 50px;">',
+  '    <li><a id="rmd-show-all-code" href="#">Show All Code</a></li>',
+  '    <li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>',
+  '  </ul>',
+  '</div>\');',
+  '</script>'
+)
+
+
+write_lines(htmlhead, path = "/Users/maevepizzolon/Spain: Sweet Biscuits, Snack Bars and Fruit Snacks/header.html")
+
+```
+# Introduction {.unnumbered}
+<img src="/Users/maevepizzolon/Spain: Sweet Biscuits, Snack Bars and Fruit Snacks/Flag.png" alt="" class="flag">
+
+This report provides a detailed analysis of the sweet biscuits, snack bars, and fruit snacks market in Spain, using data from sources such as Euromonitor, Eurostat, and Statista. The recent evolution of socio-economic factors, along with changes in consumption preferences, has influenced the development of this market. Focusing on key elements such as GDP per capita, unemployment rates, demographic trends, and the impact of the COVID-19 pandemic, exploring how these factors affect supply and demand in the sector.
+
+The section of scenario and market focuses on Spain's economic situation and its impact on snack consumption. By examining key indicators such as GDP per capita, unemployment rates, and food consumption habits, it looks at trends and consumer behaviors related to snack products. Despite the traditional expectation that higher GDP per capita would lead to increased snack consumption, the data reveals more complex patterns, influenced by factors like public health, the economic context, and the exceptional circumstances of the pandemic. The analysis also explores regional differences in consumption, highlighting how unemployment and geographic distribution affect purchasing decisions.
+
+The demand section examines consumption volumes and values, along with retail prices, and provides an international comparison to place Spain in the European context. This analysis is supported by data on the distribution of the population by age cohorts, revealing how demographic characteristics influence snack consumption. Population growth, differences in purchasing power, and a growing preference for healthier products, such as fruit snacks and low-sugar alternatives, are reshaping consumption trends.
+
+On the supply side, analyzing the structure and evolution of companies active in the snack sector in Spain. The number of companies and their evolution reflect a competitive market in which employment stability and moderate investment in technological innovation stand out as key factors. There is observed growth in employment in sectors such as food and bakery, suggesting an increase in the demand for snack products and the need to meet consumer expectations in terms of quality and variety.
+
+Finally, the report identifies the opportunities and challenges faced by snack manufacturers in Spain, focusing on the company “Gullon”. The growing demand for healthy and sustainable products offers growth opportunities for manufacturers who quickly adapt to these changing preferences. Product innovation aligned with well-being and health trends represents a way to strengthen brand positioning in a sector that balances indulgence with nutritional responsibility.
+
+Overall, this analysis aims to provide a solid foundation for understanding the dynamics of this sector and to serve as a guide for companies in Spain's snack industry to develop strategies adapted to new consumption trends and the changing market conditions.
+
+
+
+```{r,  results='hide', message=FALSE, warning=FALSE, echo=FALSE}
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
+
+
+```{r,  results='hide', message=FALSE, warning=FALSE, echo=FALSE}
+#install.packages("packages.bib")
+#install.packages("pak")
+#install.packages("knitr")
+#install.packages("readxl")
+#install.packages("ggplot2")
+#install.packages('tidyverse')
+#install.packages("utils")
+#install.packages("dplyr")
+#install.packages("pandoc")
+#install.packages("reshape2")
+#install.packages("readxl")
+#install.packages("tidyr")
+#install.packages("scales")
+#install.packages("eurostat")
+#install.packages("sf")
+#install.packages("forcats")
+#install.packages("RColorBrewer")
+#install.packages("cowplot")
+#install.packages("grid")
+#install.packages("tinytex")
+```
+
+```{r, results='hide', message=FALSE, warning=FALSE, echo=FALSE}
+library(pak)
+library(knitr)
+library(bibtex)
+library(readxl)
+library(ggplot2)
+library(readr)
+library(tidyverse)
+library(utils)
+library(dplyr)
+library(sf)
+library(forcats)
+library(cowplot)
+library(pandoc)
+library(reshape2)
+library(readxl)
+library(tidyr)
+library(scales) 
+library(eurostat)
+library(tinytex)
+
+```
+
+<!--chapter:end:index.Rmd-->
+
+
+# Scenario and Market  {.unnumbered}
+
+To begin the market analysis, it is fundamental to understand the country’s overall situation by focusing on key indicators such as GDP per capita, population, unemployment rates, and food consumption compared to other European countries. Once these points are covered, it will be possible to delve into the relationship between them and gain insight into the current context of snacks consumption in the country.
+
+
+## GDP per Capita {.unnumbered}
+
+It would seem reasonable to assume that snack consumption correlates strongly with fluctuations in GDP per capita, as higher purchasing power typically leads to increased spending on discretionary items like snacks. This would suggest that a graph depicting snack consumption volumes should closely mirror GDP per capita trends. However, evidence reveals a surprising divergence, challenging this assumption and suggesting other factors influence snack consumption patterns.
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(eurostat)
+library(dplyr)
+library(ggplot2)
+time_range <- c(2012, 2023) 
+
+data <- get_eurostat("tec00115", time_format = "num")
+
+print(head(data))
+
+data_filtered <- data |> 
+  filter(geo == "ES", 
+         TIME_PERIOD >= time_range[1] + 1, 
+         TIME_PERIOD <= time_range[2], 
+         unit == "CLV_PCH_PRE_HAB")
+
+print(head(data_filtered))
+
+ggplot(data_filtered, aes(x = TIME_PERIOD, y = values, label = values, fill = values)) +
+  geom_hline(yintercept = 0, color = "red", linetype = 2) +
+  geom_line(linetype = 2) +
+  geom_point(shape = 22, alpha = .8, size = 8) +
+  geom_text(hjust = .5, size = 2.5, color = "black") +
+  scale_fill_gradient(low = "red", high = "green") +
+  scale_x_continuous(breaks = time_range[1]:time_range[2], minor_breaks = time_range[1]:time_range[2], limits = c(time_range[1], time_range[2])) +
+  theme_bw() +
+  labs(
+    title = "GDP per capita (% change on previous year, real values)",
+    y = "%",
+    x = "Year",
+    fill = "value",
+    caption = "Eurostat (tec00115)"
+  ) + 
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8, family = "serif"),
+        legend.key.size = unit(1, "cm"), 
+        axis.title.y = element_text(size = 10, family = "serif"),
+        plot.title = element_text(hjust = 0.5, face = "bold", size = 16, family = "serif"))
+
+```
+
+Between 2014 and 2019, GDP per capita growth was relatively stable until the 2020 crisis came, when COVID changed the consumption habits of the population. Subsequently, after a rapid recovery, the consequences of the pandemic continued to severely affect the GDP of the Spanish population.
+
+On the other hand the sweet snacks market in Spain showed another trend. Starting from 2014 to 2017 the consumption slightly decreased, which could be linked to growing health consciousness, as consumers started avoiding sugar-heavy products and opting for healthier alternatives, and public health campaigns and regulatory measures aimed at reducing sugar consumption. This likely affected the demand for sweet snacks, which traditionally contain high levels of sugar.
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(tidyverse)
+library(readxl)
+
+DFR <- read_excel("~/Desktop/uni/year 2/Market Analysis/datasets/DFR.xlsx")
+countries_sel <- c("Spain", "Italy", "France", "Germany")
+time_range <- c(2014, 2023)
+
+DFR |>
+  pivot_longer(names_to = "Year", values_to = "Volume", `2014`:`2023`) |>
+  mutate(
+    Year = as.numeric(Year),          
+    Volume = as.numeric(Volume)      
+  ) |>
+  filter(
+    Category == "Sweet Biscuits, Snack Bars and Fruit Snacks" & 
+    Geography %in% countries_sel & 
+    `Data Type` == "Total Volume" & 
+    Year <= time_range[2] & 
+    Year >= time_range[1]
+  ) |>
+  group_by(Geography) |>
+  mutate(Fixed = (Volume / first(Volume[Year == time_range[1]])) * 100) |>
+  ggplot(aes(x = Year, y = Fixed, label = round(Fixed, 1), fill = Geography, color = Geography)) +
+  geom_hline(yintercept = 100, color = "blue", linetype = 2) +
+  geom_line(alpha = .6, size = 1) +
+  geom_point(alpha = 1, pch = 21, size = 10, fill = "white") +
+  geom_text(size = 2.8) +
+  scale_color_brewer(palette = "Set2") +
+  scale_x_continuous(breaks = time_range[1]:time_range[2], minor_breaks = time_range[1]:time_range[2]) +
+  theme_bw() +
+  labs(
+    title = "Snacks: Volumes",
+    subtitle = paste(time_range[1], "-", time_range[2], ", Index (", time_range[1], "=100)", sep = ""),
+    y = "Index",
+    x = "Year",
+    color = "Country",
+    caption = "Source: Passport/Euromonitor"
+  ) + 
+  theme(
+    legend.position = "right",
+    axis.text = element_text(size = 8),
+    axis.title = element_text(size = 14, face = "bold"),
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
+    plot.title = element_text(hjust = 0.5, family = "serif", size = 15, face = "bold"),
+      plot.subtitle = element_text(hjust = 0.5, family = "serif")
+  )
+```
+
+By 2020, snack consumption in Spain increased, reflecting shifts in consumer behavior during the COVID-19 pandemic. As in many other countries, lockdowns and social restrictions have probably led to a rise in at-home snacking, with consumers seeking comfort and indulgence to  periods of stress and uncertainty, but soon returned to pre-pandemic levels. The continued moderate consumption levels may reflect the balance between indulgence and health-conscious choices, where consumers occasionally enjoy sweet snacks but are also mindful of healthier alternatives.
+
+In contrast, Germany's index steadily grew, reaching, fueled by rising demand for convenience foods amid urbanization and busier lifestyles. Italy also saw significant post-2018 growth, reflecting a robust appetite for snacks. Meanwhile, France experienced a decline, with its index falling below 100 after 2016, likely due to health regulations and a cultural emphasis on traditional meals. Compared to these trends, Spain’s market remains stable, balancing traditional snack preferences with health concerns.
+
+
+## Unemployment {.unnumbered}
+
+Another fundamental indicator to understand the economic situation of a country is the unemployment rate, as it is directly related to consumers' purchasing power. 
+
+```{r results='hide', message=FALSE, warning=FALSE,}
+library(ggplot2)
+library(dplyr)
+library(eurostat)
+library(RColorBrewer)
+
+time_range <- c(2014, 2023)
+
+df <- get_eurostat("tepsr_wc170", time_format = "num") %>%
+  filter(geo == "ES" & TIME_PERIOD >= time_range[1] & TIME_PERIOD <= time_range[2]) %>%
+  filter(age == "Y20-64")
+
+plot <- ggplot(df, aes(x = TIME_PERIOD, y = values)) +
+  geom_area(alpha = .8, fill = brewer.pal(3, "Set2")[1], color = "black") +
+  geom_text(aes(label = paste(values, "%")), size = 2.5, vjust = -0.8) +
+  scale_x_continuous(breaks = time_range[1]:time_range[2], minor_breaks = time_range[1]:time_range[2]) +
+  theme_bw() +
+  labs(
+    title = "Unemployment Rate",
+    subtitle = "Y20-64",
+    y = "%",
+    x = "Year",
+    fill = "",
+    caption = "Eurostat (tepsr_wc170)"
+  ) +
+  theme_minimal()+
+  theme(
+    legend.position = "right",
+    axis.text = element_text(size = 8),
+    legend.text = element_text(size = 6),
+    legend.key.size = unit(.5, "cm"),
+    plot.title = element_text(hjust = 0.5, size = 16, face = "bold", family = "serif"),
+    axis.title = element_text(size = 14, face = "bold", family = "serif"),
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 8, family = "serif")
+) 
+print(plot)
+```
+
+
+This chart shows the unemployment rate for the 20-64 age group between 2014 and 2023, with a general downward trend, despite a slight increase in 2020 due to the pandemic. 
+This rate can strongly affect food consumption, especially non-essential products like snacks and sweets. When unemployment decreases and consumers' purchasing power improves, hence the consumption of these products is expected to increase. Conversely, when unemployment rises, the average consumer reduces spending on supplementary foods, as uncertainty forces prioritization of basic necessities. 
+
+Once again, the hypothesized proportional relationship between GDP per capita and consumption has been disproven, with data from the COVID-19 pandemic suggesting that consumers shifted part of their spending toward sweet snacks. This change highlights how consumer behavior can diverge from expected economic models in times of crisis, in this case probably due to psychological and marketing factors such as changes in prices.
+
+
+```{r}
+library(tidyverse)
+library(readxl)
+
+
+DFR <- read_excel("~/Desktop/uni/year 2/Market Analysis/datasets/DFR.xlsx")
+
+countries_sel <- c("Spain", "Italy", "France", "Germany")
+time_range <- c(2014, 2023)
+
+prices <- DFR %>%
+  filter(Category == "Sweet Biscuits, Snack Bars and Fruit Snacks", 
+         `Data Type` == "Retail Value RSP", 
+         Geography %in% countries_sel) %>%
+  pivot_longer(cols = `2014`:`2023`, names_to = "Year", values_to = "Avg_Price") %>%
+  mutate(
+    Year = as.numeric(Year),
+    Avg_Price = as.numeric(Avg_Price)
+  )
+
+
+prices %>%
+  group_by(Geography) %>%
+  mutate(Fixed = (Avg_Price / Avg_Price[Year == time_range[1]]) * 100) %>%
+  ggplot(aes(x = Year, y = Fixed, label = round(Fixed, 1), fill = Geography, color = Geography)) +
+  geom_hline(yintercept = 100, color = "blue", linetype = 2) +
+  geom_line(alpha = .6, size = 1) +
+  geom_point(alpha = 1, pch = 21, size = 10, fill = "white") +
+  geom_text(size = 2.8) +
+  scale_color_brewer(palette = "Set2") +
+  scale_x_continuous(breaks = time_range[1]:time_range[2], minor_breaks = time_range[1]:time_range[2]) +
+  theme_bw() +
+  labs(
+    title = "Sweet Snacks: Average Retail Prices",
+    subtitle = paste(time_range[1], "-", time_range[2], ", Index (", time_range[1], "=100)", sep = ""),
+    y = "Index",
+    x = "Year",
+    color = "Country",
+    caption = "Source: Passport/Euromonitor"
+  ) +
+  theme(
+    legend.position = "right",
+    axis.text = element_text(size = 8),
+    axis.title = element_text(size = 14, face = "bold"),
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
+    plot.title = element_text(hjust = 0.5, family = "serif", size = 15, face = "bold"),
+      plot.subtitle = element_text(hjust = 0.5, family = "serif")
+  )
+```
+
+
+Spain’s sweet snack prices remained relatively stable from 2014 to 2020, reflecting a cautious pricing strategy. This stability likely stemmed from balanced demand and supply dynamics, with prices staying lower compared to neighboring countries like France and Germany. The consistent pricing could be attributed to consumer price sensitivity and competitive market conditions, which may have led to more restrained price increases in Spain.
+
+However, after 2021, Spain experienced a notable price surge, likely driven by rising production costs, supply chain issues, and broader inflationary pressures. Despite this increase, Spain’s prices remained lower than in some other European countries, suggesting that competitive pressures helped keep price growth more moderate. Meanwhile, Italy’s declining prices hint at differing market conditions across Europe, where consumer behavior, economic factors, and competition influence pricing trends.
+
+Overall, while Spain’s sweet snack prices remained flat for much of the decade, the post-2021 increase points to a shift in market dynamics, driven by external economic factors. This evolution suggests that Spain’s sweet snack sector is navigating unique challenges and opportunities, and pricing will continue to be a crucial factor in shaping its future.
+
+To delve deeper into the topics of GDP and unemployment, they can be broken down by age groups as well as by regions. This chart displays the previously mentioned unemployment rate divided by age groups: 15-24 years (red), 20-64 years (orange), 25-29 years (yellow), 25-54 years (green), and 55-64 years (blue), covering the period from 2010 to 2022.
+
+```{r results='hide', message=FALSE, warning=FALSE,}
+library(ggplot2)
+library(dplyr)
+library(eurostat)
+library(RColorBrewer)
+
+
+time_range <- c(2010, 2022)
+
+data <- get_eurostat("tepsr_wc170", time_format = "num")
+
+
+data_filtered <- data |>
+  filter(geo == "ES" & TIME_PERIOD >= time_range[1] & TIME_PERIOD <= time_range[2]) |>  
+  filter(age != "Y15-74")
+
+
+if(nrow(data_filtered) == 0) {
+  stop("Filtered data is empty. Please check the filtering criteria.")
+}
+
+
+ggplot(data_filtered, aes(x = TIME_PERIOD, y = values, fill = age)) +
+  geom_col(colour = "black", alpha = .8, position = position_dodge(.9)) +
+  scale_x_continuous(breaks = time_range[1]:time_range[2], minor_breaks = time_range[1]:time_range[2]) +
+  theme_bw() +
+  scale_fill_brewer(palette = "Spectral") +
+  labs(
+    title = "Unemployment Rate",
+    subtitle = "by Age Cohort",
+    y = "%",
+    x = "Year",
+    fill = "Age cohort",
+    caption = "Eurostat (tepsr_wc170)"
+  ) + 
+  theme(
+    legend.position = "right", 
+    axis.text = element_text(size = 8), 
+    legend.text = element_text(size = 8), 
+    legend.key.size = unit(.5, "cm"), 
+    axis.title = element_text(size = 14, face = "bold", family = "serif"), 
+    plot.title = element_text(hjust = 0.5, size = 16, face = "bold", family = "serif"),
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 8, family = "serif") 
+  )
+
+
+```
+
+
+The red cohort (ages 15-24) has the highest unemployment rate, exceeding 40%. This is because most people in this age group are considered part of the active population, but they are not employed due to factors such as being students or other reasons. Although this age group is likely the target audience for snack and candy companies, they also have lower purchasing power. On the other hand, the remaining cohorts have lower and more stable unemployment rates. Even though they are not the primary target audience like the younger population, their economic stability would allow for more consistent and frequent consumption. 
+
+In the next chart it is possible to observe the geographical distribution of unemployment rates in Spain for the 20-64 age group, with darker purple colors indicating areas with lower unemployment and lighter colors representing regions with higher unemployment. It is immediately clear that the northern hemisphere has a lower unemployment rate compared to the southern hemisphere.
+
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(readxl)
+library(sf)
+library(ggplot2)
+library(dplyr)
+library(eurostat)
+library(stringr)
+
+Copy_of_NUTS2021_NUTS2024 <- read_excel("~/Desktop/uni/year 2/Market Analysis/Copy of NUTS2021-NUTS2024.xlsx")
+View(Copy_of_NUTS2021_NUTS2024)  
+time_range <- c(2023)
+country_code <- "ES" 
+
+d.u <- get_eurostat("lfst_r_lfu3rt", time_format = "num")
+d.u.ES <- d.u |> filter(age == "Y20-64" & str_detect(geo, country_code))
+
+
+codes_filtered <- Copy_of_NUTS2021_NUTS2024 %>%
+    filter(`NUTS level` == 2) %>%
+    filter(str_detect(`NUTS Code`, country_code)) 
+View(codes_filtered)  
+
+nuts_spain <- get_eurostat_geospatial(output_class = "sf", resolution = "60", nuts_level = 2)
+nuts_spain <- nuts_spain |> filter(str_detect(CNTR_CODE, country_code))
+
+d.u <- right_join(d.u.ES, codes_filtered, by = c("geo" = "NUTS Code")) %>%
+    select(-c(`NUTS level`, `Country code`, `Country order`, `#`)) %>%
+    rename(region = `NUTS label`)
+
+nuts_spain <- get_eurostat_geospatial(output_class = "sf", resolution = "60", nuts_level = 2)
+nuts_spain <- nuts_spain |> filter(str_detect(CNTR_CODE, country_code))
+
+
+spain.reg <- data.frame(
+  NUTS_Code = c("ES63", "ES64", "ES61", "ES43", "ES53", "ES42", "ES70", 
+                "ES52", "ES62", "ES", "ES12", "ES23", "ES11", "ES41", "ES51", 
+                "ES30", "ES22", "ES21", "ES24", "ES13"),  # NUTS2 codes for regions
+  Region = c("Melilla", "Ceuta", "Andalusia", "Extremadura", "Balearic Islands", 
+             "Castile- La Mancha", "Canary Islands", "Region of Valencia", 
+             "Murcia", "Spain", "Asturias", "La Rioja", "Galicia", "Castile and Leon", 
+             "Catalonia", "Community of Madrid", "Navarre", "Basque Country", "Aragon", "Cantabria"),
+  Unemployment_Rate = c(32.44, 28.99, 17.77, 17.61, 15.48, 15, 14.88, 13.44, 12.95, 
+                        12.29, 11.40, 11.04, 10.45, 10.26, 9.48, 9.19, 8.82, 8.53, 8.04, 7.53)
+)
+
+d.geo <- full_join(
+    nuts_spain,   
+    spain.reg,   
+    by = c("NUTS_ID" = "NUTS_Code")  
+)
+
+p <- ggplot(d.geo, aes(geometry = geometry, fill = Unemployment_Rate)) +
+    geom_sf() +
+    scale_fill_viridis_c(option = "plasma", name = "Unemployment rate (%)") +
+    theme_void() +
+    theme(legend.position = "bottom",
+          plot.title = element_text(hjust = 0.5, size = 16, face = "bold", family = "serif"),) +
+    labs(
+        title = "Unemployment rate in Spain by region",
+        subtitle = "Working age population (20-64 years)",
+        caption = "Source: Eurostat"
+    )
+
+print(p)
+
+```
+
+In regions with higher unemployment, such as Andalusia, the Canary Islands, Extremadura, etc., the consumption of  Sweet Biscuits, Snack Bars, and Fruit Snacks might be more moderate due to lower purchasing power. On the other hand, in regions with lower unemployment, like the Basque Country, La Rioja, or Castilla-León, higher consumption can be expected due to greater financial stability.
+
+## Consumption{.unnumbered}
+
+Finally, it would be interesting to analyze how Spanish consumers allocate resources to food consumption. As previously shown, high purchasing power alone does not provide a clear picture of consumption without understanding how the surplus is spent and there isn’t a clear direct correlation between increase in per capita GDP and consumption.
+
+The chart shows food consumption as a percentage of GDP in several EU countries for the year 2022, including Austria, Germany, France, Italy, Spain and Portugal. 
+
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(eurostat)
+library(ggplot2)
+library(dplyr)
+library(forcats)
+library(RColorBrewer)
+
+
+countries_EU <- c("IT","AT","FR","DE","EL","ES", "PT")
+
+data <- get_eurostat("nama_10_cp18", time_format = "num")
+
+data_filtered <- data |>
+    filter(coicop18 == "CP011" & geo %in% countries_EU & unit == "PC_GDP" & TIME_PERIOD == 2022)
+
+
+ggplot(data_filtered, aes(x = fct_reorder(geo, values), y = values)) +
+   
+    geom_col(color = "black", position = position_dodge(.9), fill = brewer.pal(3, "Set2")[1]) +
+    
+    geom_hline(yintercept = mean(data_filtered$values), color = brewer.pal(3, "Set2")[2], linetype = 2) +
+
+    theme_bw() +
+  
+    labs(
+        title = "Consumption of Food (% of GDP) in Selected EU Countries",
+        subtitle = "Year 2022",
+        y = "%",
+        x = "Country",
+        caption = "Eurostat (nama_10_cp18)"
+    ) + 
+   
+    theme(
+        legend.position = "none", 
+        axis.text = element_text(size = 8), 
+        axis.title = element_text(size = 14, face = "bold",  family = "serif"), 
+        axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
+        plot.title = element_text(hjust = 0.5, size = 16, face = "bold", family = "serif"),
+    )
+
+
+```
+
+It can be observed that in Spain, around 7% of the population's GDP is allocated to food consumption, including snacks and sweets, placing it above Austria, Germany, and France, and below Italy and Portugal. This provides valuable information when comparing consumer habits and analyzing different markets within different countries.
+
+The Spanish snack market has been largely dominated by sweet biscuits, which have traditionally accounted for nearly all of the market share. However, this share has slightly decreased in recent years, reflecting a broader shift towards healthier consumer preferences.
+
+The rising popularity of fruit snacks can be attributed to several factors, including the growing awareness of health and wellness trends, which encourage consumers to opt for snacks that are perceived as more wholesome. Fruit snacks often appeal to parents looking for healthier options for their children, as well as to adults who desire convenient, guilt-free indulgences. This transition in consumer behavior suggests a shift towards snacking habits that prioritize ingredients, quality, and health benefits, creating opportunities for brands that can effectively market and innovate in this space.
+
+
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(tidyverse)
+library(readxl)
+
+
+DFR <- read_excel("~/Desktop/uni/year 2/Market Analysis/datasets/DFR.xlsx")
+
+
+time_range <- c(2014, 2023)
+
+DFR %>%
+  pivot_longer(names_to = "Year", values_to = "Volume", cols = starts_with("20")) %>%
+  mutate(
+    Year = as.integer(Year),     
+    Volume = as.numeric(Volume)    
+  ) %>%
+  filter(!is.na(Volume)) %>%        
+  filter(
+    Geography == "Spain" & 
+    `Data Type` == "Total Volume" & 
+    Category %in% c("Fruit Snacks", "Snack Bars", "Sweet Biscuits")
+  ) %>%
+  group_by(Geography, Year) %>%
+  mutate(Tot_Volume = sum(Volume)) %>%
+  mutate(Share = (Volume / Tot_Volume) * 100) %>%
+  ggplot(aes(x = Year, y = Share, fill = fct_reorder(Category, Share))) +
+  geom_col(color = "black", alpha = .6, width = 1) +
+  geom_text(aes(label = paste0(round(Share, 1), "%")), 
+            position = position_stack(vjust = 0.5), size = 2) +
+  scale_x_continuous(breaks = time_range[1]:time_range[2], 
+                     minor_breaks = time_range[1]:time_range[2]) +
+  theme_bw() +
+  scale_fill_brewer(palette = "Set2") +
+  labs(
+    title = "Sweet Snacks Segments",
+    subtitle = "Volumes, %",
+    x = "Year",
+    y = "%",
+    fill = "",
+    caption = "Source: Passport/Euromonitor"
+  ) +
+  theme(
+    legend.position = "bottom",
+    legend.text = element_text(size = 6),
+    legend.key.size = unit(.5, "cm"),
+    axis.text = element_text(size = 8),
+    axis.title = element_text(size = 14, face = "bold"),
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
+    plot.title = element_text(hjust = 0.5, family = "serif", size = 15, face = "bold"),
+      plot.subtitle = element_text(hjust = 0.5, family = "serif")
+  ) +
+  coord_flip()
+```
+
+In stark contrast to the rising fruit snack segment, the snack bars market has demonstrated a remarkable degree of stability, maintaining a consistent share over the past decade. This steady performance indicates that while snack bars have successfully carved out a niche in the market, they have not experienced significant growth or decline. Instead, they appear to cater to a loyal customer base that values their convenience and health-oriented ingredients, such as nuts, grains, and proteins. The stability of snack bars suggests that they serve as a reliable choice for consumers seeking on-the-go nutrition without compromising on taste.
+
+In summary, the economic indicators analyzed in this section, such as GDP per capita, unemployment rates, and an overall view of the population, suggest a favorable market for our product. With rising GDP and population growth, it’s normal to expect stable demand, even if this relation is not statistically relevant, especially among older age groups, as irregular unemployment rates by age cohort limit the purchasing power of certain consumers.
+
+
+
+
+
+<!--chapter:end:01-intro.Rmd-->
+
+# Demand  {.unnumbered}
+
+Understanding the country's population trends is essential for analyzing the needs of target customer groups and assessing whether Spain is experiencing demographic growth or decline. For this, referring to a chart of Spain's population from 2014 to 2024, measured in millions, would be useful.
+
+
+## Population, GDP and Consumption per Capita  {.unnumbered}
+
+Since 2016, Spain’s population has been steadily increasing, likely due to factors like immigration and birth rates. This growth suggests a greater overall consumption of mass-market products, including sweet biscuits, snack bars, and fruit snacks. However, when combining this data with per capita GDP trends, it becomes clear that population alone is not a fully reliable indicator of consumption, as it depends heavily on the current economic situation. Nevertheless, population growth and post-pandemic economic recovery together suggest that the demand for snacks and candies in Spain is rising.
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+
+
+df <- data.frame(
+  year = c(2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024),
+  population = c(46.49, 46.42, 46.41, 46.49, 46.64, 46.91, 47.31, 47.40, 47.48, 48.08, 48.61)
+)
+
+
+ggplot(df, aes(x = year, y = population, color = factor(year))) +
+  geom_line(color = "lightgrey") +
+  geom_point(size = 2) +
+  geom_text(aes(label = population), vjust = -0.65,hjust = 1.25, size = 2.5) +  
+  labs(
+    title = "Spain's Population (2014-2024)",
+    x = "Year",
+    y = "Population (millions)",
+    caption= "Eurostat (tps00001)"
+  ) +
+  scale_x_continuous(breaks = df$year) +  
+  theme(
+    legend.position = "none",
+    axis.title.x = element_text(size = 10, family = "serif"),
+    axis.title.y = element_text(size = 10, family = "serif"),
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 16, family = "serif")
+  )
+
+```
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(readxl)
+Per_capita_volumes_and_per_capita_GDP <- read_excel("~/Desktop/uni/year 2/Market Analysis/datasets-2/Per-capita volumes and per-capita GDP.xlsx")
+
+
+Per_capita_volumes_and_per_capita_GDP <- Per_capita_volumes_and_per_capita_GDP %>%
+  mutate(
+    GDP_percapita_index = (GDP_percapita / GDP_percapita[Year == 2014]) * 100,
+    Volumes_percapita_index = (Volumes_percapita / Volumes_percapita[Year == 2014]) * 100
+  )
+ggplot(Per_capita_volumes_and_per_capita_GDP, aes(x = Year)) +
+  geom_line(aes(y = GDP_percapita_index, color = "GDP per capita"), size = 1.2) +  
+  geom_line(aes(y = Volumes_percapita_index, color = "Volumes per capita"), size = 1.2) +  
+  geom_point(aes(y = GDP_percapita_index, color = "GDP per capita"), size = 11) +  
+  geom_point(aes(y = Volumes_percapita_index, color = "Volumes per capita"), size = 11) +
+  geom_text(
+    data = Per_capita_volumes_and_per_capita_GDP %>% filter(Year != 2014),
+    aes(y = GDP_percapita_index, label = round(GDP_percapita_index, 1)),
+    color = "black", size = 3.5, fontface = "bold"
+  ) +
+  geom_text(
+    data = Per_capita_volumes_and_per_capita_GDP %>% filter(Year != 2014),
+    aes(y = Volumes_percapita_index, label = round(Volumes_percapita_index, 1)),
+    color = "black", size = 3.5, fontface = "bold"
+  ) +
+  labs(title = "GDP and Consumption per Capita (2014-2023)",
+       subtitle = "Per capita values in Spain",
+       x = "Year",
+       y = "%",
+       caption = "Source: Euromonitor/Passport"
+  ) +
+  theme_minimal() +
+  scale_color_manual(name = "Variable", 
+                     values = c("GDP per capita" = "orange", "Volumes per capita" = "turquoise")) +  
+  theme(plot.title = element_text(hjust = 0.5, face = "bold", size = 16, family = "serif"),
+        plot.subtitle = element_text(hjust = 0.5, size = 12, family = "serif"),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        legend.position = "bottom")
+
+```
+
+Having examined the population trends, the focus shifts to GDP per capita, where its growth does not always translate into proportional consumption increases, highlighting the complex interplay between demographics and economic factors in market demand.
+
+As previously demonstrated, there isn’t a strong correlation between population, GDP, and consumption trends. Both GDP and Consumption per capita grew steadily until 2019, where they reached the same index, indicating identical growth percentages. In 2020, GDP per capita dropped sharply, nearly returning to the base year value, while Consumption per capita declined only slightly. 
+This shift likely reflects the economic impact of the COVID-19 pandemic.
+
+In the post-pandemic period, both GDP and Consumption per capita began to grow steadily. By 2023, GDP per capita, following a sharp increase from 2020 to 2022, returned to its pre-COVID evel, showing an overall growth of nearly 15% from 2014. Meanwhile, Consumption per capita, after a notable spike from 2020 to 2021, grew by over 20% from the base year by 2023.
+
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(eurostat)
+library(dplyr)
+library(ggplot2)
+library(RColorBrewer)
+
+time_range <- c(2014, 2023)
+
+df <- get_eurostat("tps00010", time_format = "num", cache = FALSE)
+
+df_filtered <- df %>%
+  filter(geo == "ES" & TIME_PERIOD <= time_range[2] & TIME_PERIOD >= time_range[1])
+
+plot <- ggplot(df_filtered, aes(x = TIME_PERIOD, y = values, fill = indic_de)) +
+  geom_col(colour = "black", alpha = .6, width = 1) +
+  geom_text(aes(label = paste0(values, "%")), position = position_stack(vjust = 0.5), size = 4) +
+  scale_x_continuous(breaks = time_range[1]:time_range[2], minor_breaks = time_range[1]:time_range[2]) +
+  theme_bw() +
+  scale_fill_brewer(palette = "Spectral") +
+  labs(
+    title = "Population by age cohort",
+    x = "Year",
+    y = "%",
+    fill = "",
+    caption = "Eurostat (tps00010)"
+  ) +
+theme_minimal()+
+  theme(
+    legend.position = "right",
+    legend.text = element_text(size = 6),
+    legend.key.size = unit(.5, "cm"),
+    plot.title = element_text(hjust = 0.5, size = 16, face = "bold", family = "serif"),
+    axis.text = element_text(size = 8),
+    axis.title = element_text(size = 14, face = "bold", family = "serif"),
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 8, family = "serif")
+  )
+
+
+print(plot)
+```
+
+With GDP per capita reviewed, it is crucial to focus on population by age cohort, where differences in age distribution further underscore how demographic factors interact with economic conditions to shape overall market demand.
+
+The younger demographic (0-24 years), who are the primary consumers of snacks and sweets, has experienced a slight decline. Meanwhile, the middle-aged group (25-49 years) has seen a more noticeable reduction but still represents a significant portion of the population. In contrast, the older age groups (50-79 years) have grown, indicating an aging population that may have different consumption preferences and could impact overall snack demand.
+
+This demographic shift emphasizes the need for snack and candy companies to adapt their strategies to cater to a more mature audience while also continuing to innovate to appeal to younger consumers. Following the analysis of population by age cohort,The analysis then shifts to the shares of the snack market, where varying age demographics reveal distinct preferences that influence the distribution and growth of each snack segment within the market.
+
+## Share of Revenues {.unnumbered}
+
+Since 2014, the savory snack market has dominated Spain's snack sector, holding about 30% of the market share and continuing to grow. The second largest segment is confectionery, which accounts for approximately 25% of the market and has remained stable over the past nine years.
+
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(readxl)
+Types_of_snacks <- read_excel("~/Desktop/uni/year 2/Market Analysis/datasets-2/Types of snacks.xlsx")
+
+Types_of_snacks <- Types_of_snacks %>%
+  group_by(Year) %>%
+  mutate(Percentage = Retail_Value_RSP / sum(Retail_Value_RSP))
+ggplot(Types_of_snacks, aes(x = Year, y = Percentage, fill = Type_of_goods)) +
+  geom_bar(stat = "identity", position = "fill") +
+  coord_flip() +
+  labs(title = "Spain, Share of Revenues (RSP, constant prices)",
+       x = "Year",
+       y = "% of Revenue Share",
+       caption = "Source: Euromonitor/Passport") +
+  scale_y_continuous(labels = scales::percent_format(scale = 100)) +
+  geom_text(aes(label = scales::percent(Percentage, accuracy = 1)),
+            position = position_fill(vjust = 0.5), size = 3) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(size = 10),
+        axis.text.y = element_text(size = 12),
+        legend.position = "bottom",
+         plot.title = element_text(hjust = 0.5, size = 14, face = "bold", family = "serif"),)
+
+```
+
+Sweet biscuits, snack bars, and fruit snacks ranked third, starting at 21.5% in 2014 but declining to around 19.5% in 2023, likely due to shifting consumer preferences. The ice cream market consistently holds the smallest share, around 15%, with little change over time.
+
+## Average Price and Sweet Snacks Quantity{.unnumbered}
+
+After examining the shares of the snack market, the discussion progresses to average prices and quantity demanded.
+Shifts in market share align with price trends, indicating how consumer preferences and price sensitivity shape demand across different snack categories.
+
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(readxl)
+Sweet_Snacks <- read_excel("~/Desktop/uni/year 2/Market Analysis/datasets-2/Sweet Snacks.xlsx")
+Sweet_Snacks <- Sweet_Snacks %>%
+  group_by(Type_of_goods) %>%
+  mutate(Index = (Retail_Value_RSP / Retail_Value_RSP[Year == 2014]) * 100)  
+ggplot(Sweet_Snacks, aes(x = Year, y = Index, color = Type_of_goods, group = Type_of_goods)) +
+  geom_line(size = 0.8) +  
+  geom_point(size = 3) +   
+  geom_hline(yintercept = 100, linetype = "dashed", color = "blue") +  
+  labs(title = "Average Prices and Sweet Snacks Quantity",
+       subtitle = "(the black line is the quantity demanded of Sweet Snacks); index (2014=100)",
+       x = "Year",
+       y = "Index",
+       color = "Category",
+       caption = "Source: Euromonitor/Passport"
+  ) +
+  theme_minimal() +
+theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", family = "serif"),
+    plot.subtitle = element_text(hjust = 0.5, family = "serif"),
+    axis.text.x = element_text(size = 12),
+    axis.text.y = element_text(size = 12),
+    legend.position = "bottom",
+    legend.text = element_text(size = 6)
+  ) +
+  scale_color_manual(values = c("Confectionery" = "green",
+                                "Ice Cream" = "orange",
+                                "Savoury Snacks" = "blue",
+                                "Sweet Biscuits, Snack Bars and Fruit Snacks" = "red",
+                                 "All Sweet Snacks" = "black")) 
+
+```
+
+Starting from 2014, demand for all sweet snacks grew by around 32.5%, with huge growth spikes from 2018 to 2020 and from 2022 to 2023, indicating that during 9 last years the consumer’s preferences towards sweet snacks have grown substantially. Of all the sweet snacks, the demand for savory snacks has grown the most, by more than 45%, having the most intense growth periods from 2019 to 2021 and from 2022 to 2023. The demand for sweet biscuits, snack bars and fruit snacks has grown the least amongst the sweet snacks categories, only by 12.5%, and having a negative growth period from 2014 to 2018. Demand for confectionery and ice cream grew similarly, 32.5% for ice cream and 29% for confectionery, both of them growing fast in the post-Covid period.
+Summing up all the facts, it can be concluded that the demand for sweet snacks in Spain is growing rapidly, especially after the pandemic.
+
+## Vegetarians and vegans {.unnumbered}
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(readxl)
+Vegans_and_vegetarians_Europe_2023 <- read_excel("~/Desktop/uni/year 2/Market Analysis/datasets-2/Vegans and vegetarians Europe 2023.xlsx")
+ggplot(Vegans_and_vegetarians_Europe_2023, aes(x = Country, y = Percentage, fill = Diet)) +
+  geom_bar(stat = "identity", position = "stack") +  
+  coord_flip() + 
+  geom_text(aes(label = round(Percentage, 1)), 
+            position = position_stack(vjust = 0.5),  
+            size = 4, color = "black") +  
+  labs(title = "Vegetarianism and Veganism among Young Adults",
+       subtitle = "Selected European Countries 2023",
+       x = "Country",
+       y = "Percentage (%)",
+       caption = "Source: Statista") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5, family = "serif", face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5, family = "serif"),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        legend.position = "bottom") +
+ scale_fill_manual(values = c("Vegan" = "lightgreen", "Vegetarian" = "salmon"))
+
+```
+
+In parallel, data on plant-based diets across Europe reveals significant dietary shifts, particularly among young adults. Germany leads with nearly 20% of its population identifying as vegan or vegetarian, mainly vegetarian. France follows with just over 10%, where vegans slightly outnumber vegetarians. Spain shows a balanced distribution, with about 10% of the population adhering to these diets. Italy and Poland have the smallest proportions of vegans and vegetarians, with a higher percentage of vegetarians in each country.
+
+The growing popularity of plant-based diets is essential for understanding demand trends in the snack and confectionery sector. Countries like Germany, France, and Spain are experiencing shifts in consumer preferences toward healthier, wellness-focused products. These insights are crucial for developing product strategies that respond to rising demand for snacks free from animal ingredients. By aligning with trends in sustainability and health, companies have an opportunity to capture a growing consumer segment while supporting the movement toward wellness and conscious consumption.
+
+
+
+
+
+
+
+<!--chapter:end:02-cross-refs.Rmd-->
+
+# Supply  {.unnumbered}
+
+The analysis of supply is crucial for understanding its impact on prices, market equilibrium, and overall economic dynamics. By examining supply, it becomes possible to gain a deeper insight into how the quantity of goods and services produced by firms responds to changes in market conditions. This, in turn, helps explain price fluctuations, the establishment of market equilibrium, and how various factors, such as input costs, technology, and market expectations, influence production decisions. A comprehensive understanding of supply dynamics is essential for assessing the efficiency and stability of markets, as well as for predicting potential shifts in economic conditions.
+
+## Active enterprises, Average Price {.unnumbered}
+<img src="/Users/maevepizzolon/Spain: Sweet Biscuits, Snack Bars and Fruit Snacks/graph.png" alt="" class="graph">
+
+The most intriguing insight is perhaps the relation between retail volumes and average prices, offering a comprehensive view of supply trends throughout the year.
+As becomes evident from the graph, the last 10 years highlight three distinct subperiods.
+The first (2014–2017, circled in red) reveals a sharp decline in retail volumes while prices remain nearly constant, indicating market contraction. The second (2018–2020, circled in green) shows the opposite trend, pointing to an expansionary phase. Finally, the last period (2021–2023, circled in blue) depicts a steep price rise with stable volumes, reflecting high inflation after the COVID pandemic.
+
+```{r results='hide', message=FALSE, warning=FALSE, }
+library(tidyverse)
+
+data <- data.frame(
+  Year = c(2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023),
+  Retail_Volume = c(303.7, 299.2, 297.3, 294.6, 297.3, 301.8, 315.4, 308.8, 305.4, 305.6),  
+  Retail_Value_RSP = c(1554, 1529.9, 1532.2, 1513.5, 1547.7, 1585.2, 1652.6, 1604.3, 1642.9, 1744.3)  
+)
+
+data$Average_Price <- data$Retail_Value_RSP / data$Retail_Volume  
+invisible(ggplot(data, aes(x = Retail_Volume, y = Average_Price)) +
+  geom_point(size = 6, shape = 21, color = "gray", alpha = 0.4, fill = "gray") +  
+  geom_point(size = 15, shape = 4, color = "black") + 
+  geom_text(aes(label = Year), color = "black", size = 4, vjust = -1.5) +
+  geom_segment(aes(xend = lead(Retail_Volume), yend = lead(Average_Price)),
+               arrow = arrow(length = unit(0.2, "cm"), type = "closed"), 
+               color = "black", size = 0.3, na.rm = TRUE) + 
+
+  labs(
+    title = "Average Price vs Retail Volume",
+    subtitle = "Spain: Sweet Biscuits, Snack Bars and Fruit Snacks",
+    x = "Retail Volume (000 tonnes)",
+    y = "Average Price (EUR)",
+    caption = "Source: Passport/Euromonitor"
+  ) +
+    
+  theme_minimal() +
+
+  theme(
+    plot.title = element_text(size = 16, face = "bold", family = "serif",),
+    plot.subtitle = element_text(size = 12, family = "serif",),
+    axis.title = element_text(size = 12),
+    axis.text = element_text(size = 10),
+   
+  ))
+
+
+```
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+
+
+data <- data.frame(
+  Sector = c("Manufacturing (C)", "Food (C10)", "Bakery (C107)", "Snacks (C1072)"),
+  X2014 = c(166.589, 22.445, 10.474, 674),
+  X2015 = c(166.936, 22.215, 9.870, 486),
+  X2016 = c(166.984, 22.537, 9.978, 503),
+  X2017 = c(168.717, 23.151, 10.279, 509),
+  X2018 = c(171.994, 24.437, 11.286, 580),
+  X2019 = c(171.281, 24.713, 11.698, 580),
+  X2020 = c(168.924, 24.654, 11.545, 595),
+  X2021 = c(173.843, 25.429, 11.952, 652),
+  X2022 = c(171.103, 25.003, 11.734, 661)
+)
+
+
+data$Sector <- factor(data$Sector, levels = c("Manufacturing (C)", "Food (C10)", "Bakery (C107)", "Snacks (C1072)"))
+
+
+data_indexed <- data %>%
+  rowwise() %>%
+  mutate(across(X2014:X2022, ~ (.x / X2014) * 100)) %>%
+  ungroup()
+
+
+data_long <- data_indexed %>%
+  pivot_longer(cols = starts_with("X"), names_to = "Year", values_to = "Index") %>%
+  mutate(Year = as.numeric(sub("X", "", Year)))  # Remove "X" and convert to numeric
+
+
+ggplot(data_long, aes(x = Year, y = Index, color = Sector)) +
+  geom_line(size = 1.5, alpha = 0.6) +
+  geom_point(size = 3, alpha = 0.7, shape = 21, fill = "white", stroke = 0.8) +
+  scale_color_manual(values = c("#FFB3BA", "#B2E1FF", "#B5EAD7", "#C7CEEA")) +  
+  theme_minimal() +
+  labs(
+    title = "Active Enterprises",
+    subtitle = "Index (2014=100)",
+    x = "Year",
+    y = "Index",
+    color = "Sector",
+    caption = "Sources: Eurostat (sbs_na_ind_r2 V11110, sbs_ovw_act ENT_NR)"
+  ) +
+  geom_hline(yintercept = 100, linetype = "dashed", color = "gray50") +
+  theme(
+    plot.title = element_text(hjust = 0.5, family = "serif", face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, family = "serif"),
+    legend.position = "right"
+  ) +
+  scale_x_continuous(breaks = seq(2014, 2022, by = 1), labels = as.character(seq(2014, 2022, by = 1)))  
+```
+
+These observations align closely with the prior analysis made in section I. To delve deeper into the analysis of the Spanish market for sweet biscuits, snack bars, and fruit snacks, it is useful to examine insights on active enterprises.
+
+The evolution of active enterprises in Spain from 2014 to 2022 shows how different sectors responded to market conditions. The Manufacturing sector remained stable, with its index staying close to 100 throughout the period, indicating little change despite shifts in other industries.
+
+
+## Number of employees  {.unnumbered}
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+
+
+data <- data.frame(
+  Sector = c("Manufacturing (C)", "Food (C10)", "Bakery (C107)", "Snacks (C1072)"),
+  X2014 = c(1724072, 309009, 76008, 12010),
+  X2015 = c(1768948, 316257, 78888, 13128),
+  X2016 = c(1854926, 337820, 83913, 14550),
+  X2017 = c(1917714, 352841, 87009, 14568),
+  X2018 = c(2019905, 377697, 94345, 15603),
+  X2019 = c(2064593, 396287, 95884, 15559),
+  X2020 = c(2044599, 401190, 95533, 15611),
+  X2021 = c(2117679, 419172, 100174, 15893),
+  X2022 = c(2120300, 432363, 101181, 15750)
+)
+
+data$Sector <- factor(data$Sector, levels = c("Manufacturing (C)", "Food (C10)", "Bakery (C107)", "Snacks (C1072)"))
+
+
+data_indexed <- data %>%
+  rowwise() %>%
+  mutate(across(X2014:X2022, ~ (.x / X2014) * 100)) %>%
+  ungroup()
+
+
+data_long <- data_indexed %>%
+  pivot_longer(cols = starts_with("X"), names_to = "Year", values_to = "Index") %>%
+  mutate(Year = as.numeric(sub("X", "", Year)))  # Remove "X" prefix for year
+
+
+ggplot(data_long, aes(x = Year, y = Index, color = Sector, group = Sector)) +
+  geom_line(size = 1.5, alpha = 0.5) +
+    geom_point(size = 3, alpha = 0.7, shape = 21, fill = "white", stroke = 0.8)+ 
+  scale_color_manual(values = c("#FFB3BA", "#FFDFBA", "#BAE1FF", "#B8E3B8")) +  # Pastel colors
+  labs(
+    title = "Number of employees",
+    subtitle = "2014-2022, Index (2014=100)",
+    x = "Year",
+    y = "Index",
+    color = "Sector",
+    caption = "Source: Eurostat (sbs_na_ind_r2 V16110, sbs_ovw_act EMP_NR)"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 16, face = "bold", family = "serif", hjust = 0.5),
+    plot.subtitle = element_text(size = 12, family = "serif", hjust = 0.5),
+    axis.title = element_text(size = 14),
+    axis.text = element_text(size = 12),
+    legend.position = "right"
+  ) +
+  geom_hline(yintercept = 100, linetype = "dashed", color = "black", size = 0.5) +
+  scale_x_continuous(breaks = seq(2014, 2022, 1), labels = 2014:2022)  
+
+```
+
+The Food sector has experienced moderate growth over the years, showing resilience despite disruptions such as the COVID-19 pandemic. The Bakery sub-sector mirrors this trend, maintaining steady demand despite minor fluctuations linked to evolving consumer preferences and industry challenges. Conversely, the Snacks sub-sector faced a significant decline but has been gradually recovering, though it has yet to reach its earlier performance levels.
+Overall, while the Food and Bakery sectors demonstrate stability and consistent growth, the Snacks sector continues to face challenges. These trends highlight the need for strategic planning by businesses and policymakers to navigate market dynamics effectively.
+
+It is equally important to understand employment trends in Spain, as this offers valuable insights into the industry's growth trajectory and labor demand.
+
+The employment trends from 2014 to 2022 across various sectors of Spain's sweet snacks market reflect significant growth, particularly in food manufacturing. The consistent increase in employment suggests a rising demand for labor, driven largely by the expansion of food production, especially sweet snacks like biscuits and pastries.
+
+The food manufacturing sector (C10) in Spain has shown strong growth, particularly after 2020, driven by changing consumer preferences and increased demand for packaged foods during the pandemic. This sector has outpaced general manufacturing, showcasing its resilience, with the sweet snacks sub-sector (C1072) playing a crucial role. While growth in the sweet snacks sector has slowed in recent years, likely due to market saturation or improved production efficiency, demand remains robust.
+
+The sweet snacks sector has been a significant contributor to job creation in food manufacturing, reflecting its labor-intensive nature and operational scale. Employment trends from 2014 to 2022 highlight the sector's importance, with a consistent demand for more employees per company and increased work hours. These dynamics point to growing production output, driven by consumer demand for convenience and indulgent products. The sector's adaptability to evolving market needs underscores its stability and importance for Spain's economic recovery.
+
+This sector plays a dual role in driving employment and scalability while offering opportunities for economies of scale and investment. The focus now shifts to how capital allocation in machinery and equipment can further enhance growth and competitiveness in the sweet snacks industry.
+
+## Investment in machinery and equipment / Added value {.unnumbered}
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+
+
+investment_data <- data.frame(
+  Sector = c("Manufacturing (C)", "Food (C10)", "Bakery (C107)", "Snacks (C1072)"),
+  X2014 = c(11638.7, 2125.2, 304.3, 96.2),
+  X2015 = c(13331.7, 2140.6, 343.3, 84.6),
+  X2016 = c(13822.4, 2287.2, 362.6, 109),
+  X2017 = c(15511.7, 2536.0, 373.3, 140.3),
+  X2018 = c(17636.4, 2795.2, 350.7, 107.2),
+  X2019 = c(18059, 2965, 366.4, 114.7),
+  X2020 = c(16539.6, 3170.4, 486.5, 146.2),
+  X2021 = c(16538, 3272, 447.22, 139.94),
+  X2022 = c(18349.65, 3919.16, 511.49, 142.36)
+)
+
+
+value_added_data <- data.frame(
+  Sector = c("Manufacturing (C)", "Food (C10)", "Bakery (C107)", "Snacks (C1072)"),
+  X2014 = c(97577.30, 15710.5, 2453.10, 614.2),
+  X2015 = c(101928.00, 15199.8, 2546.50, 674.4),
+  X2016 = c(105309.80, 15654.4, 2591.00, 735.1),
+  X2017 = c(110841.40, 16375.9, 2748.20, 736.7),
+  X2018 = c(120875.60, 17753.0, 2918.40, 783),
+  X2019 = c(125438.60, 19170, 3043.70, 772.2),
+  X2020 = c(114370.70, 19165.8, 2766.70, 680.3),
+  X2021 = c(133528.48, 21930, 3093.51, 676.51),
+  X2022 = c(145574.59, 20875.94, 3250.94, 671.07)
+)
+
+investment_long <- investment_data %>%
+  pivot_longer(cols = starts_with("X"), names_to = "Year", values_to = "Investment") %>%
+  mutate(Year = as.numeric(sub("X", "", Year)))
+
+value_added_long <- value_added_data %>%
+  pivot_longer(cols = starts_with("X"), names_to = "Year", values_to = "Value_Added") %>%
+  mutate(Year = as.numeric(sub("X", "", Year)))
+
+
+merged_data <- investment_long %>%
+  left_join(value_added_long, by = c("Sector", "Year"))
+
+merged_data <- merged_data %>%
+  mutate(Ratio = (Investment / Value_Added) * 100)
+
+
+merged_data$Sector <- factor(merged_data$Sector, 
+                             levels = c("Manufacturing (C)", "Food (C10)", "Bakery (C107)", "Snacks (C1072)"))
+
+ggplot(merged_data, aes(x = Year, y = Ratio, fill = Sector)) +
+  geom_bar(stat = "identity", position = "dodge", color = "black") +
+  scale_x_continuous(breaks = 2014:2022) +
+  scale_fill_manual(values = c("#FFB3BA", "#FFDFBA", "#BAE1FF", "#B8E3B8")) +
+  labs(
+    title = "Investment in machinery and equipment / Added value",
+    subtitle = "Index (2014=100)",
+    x = "Year",
+    y = "Investment to Value Added (%)",
+    fill = "Sector",
+    caption = "Source: Eurostat (sbs_na_ind_r2 V15150/V12150, sbs_ovw_act GRSINV_MAC_MEUR/AV_MEUR )"
+  ) +
+  theme_minimal()+
+  theme( plot.title = element_text(size = 16, face = "bold", family = "serif", hjust = 0.5),
+    plot.subtitle = element_text(size = 12, family = "serif", hjust = 0.5))
+```
+
+The analysis of labor costs, production costs, and productivity in Spain’s manufacturing sector provides valuable insights into the economic dynamics shaping the industry, including the sweet snacks segment. These elements are critical indicators of the sector’s ability to balance input costs with output efficiency, directly influencing profitability and competitiveness.
+
+Recent trends reveal challenges in maintaining cost efficiency, with declining productivity and fluctuating labor costs exerting pressure on profit margins. The observed divergence between costs and productivity is particularly significant. For instance, while labor costs and productivity dropped below baseline levels by 2020, the cost per unit of production remained relatively stable, close to 100. This suggests rising production costs relative to output, indicating inefficiencies in converting inputs into value-added products.
+
+## Cost of Labour / Productivity{.unnumbered}
+
+```{r results='hide', message=FALSE, warning=FALSE}
+
+library(eurostat)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+
+time_range <- c(2013, 2020)
+geo_filter <- "ES"  # Spain
+
+
+c_lab <- get_eurostat("sbs_na_ind_r2", time_format = "num", filters = list(geo = geo_filter)) %>%
+  filter(indic_sb %in% c("V91110", "V13310") & nace_r2 == "C1073" & time >= time_range[1] & time <= time_range[2]) %>%
+  select(indic_sb, time, values) %>%
+  pivot_wider(names_from = indic_sb, values_from = values) %>%
+  mutate(CostProd = V13310 / V91110)
+
+
+Cost <- round((c_lab$V13310 / c_lab$V13310[1]) * 100, 1)
+Productivity <- round((c_lab$V91110 / c_lab$V91110[1]) * 100, 1)
+CostProd <- round((c_lab$CostProd / c_lab$CostProd[1]) * 100, 1)
+time <- seq(time_range[1], time_range[2])
+
+
+index_data <- data.frame(time, Cost, Productivity, CostProd) %>%
+  pivot_longer(cols = 2:4, names_to = "Category", values_to = "values")
+
+
+ggplot(index_data, aes(x = time, y = values)) +
+  geom_hline(yintercept = 100, color = "blue", linetype = 2) +
+  geom_line(aes(color = Category), alpha = .6, size = 1) +
+  geom_point(aes(color = Category), alpha = 1, pch = 21, size = 6) +
+  geom_text(aes(label = values), size = 2, color = "black", vjust = -0.4) +  
+  scale_x_continuous(breaks = seq(time_range[1], time_range[2], 1)) +
+  scale_color_manual(name = "Value", values = c("#FF3399", "#0099CC",  "#009966")) +
+  theme_bw() +
+  labs(
+    title = "Cost of Labour / Productivity",
+    subtitle = paste(time_range[1], "-", time_range[2], ", Index (", time_range[1], "=100)", sep = ""),
+    y = "Index",
+    x = "Year",
+    caption = "Source: Eurostat (sbs_na_ind_r2, V91110, V13310)",
+    tag = "Figure 4.5"
+    
+  ) +
+  theme(
+     plot.title = element_text(size = 16, face = "bold", family = "serif", hjust = 0.5),
+    plot.subtitle = element_text(size = 12, family = "serif", hjust = 0.5),
+    legend.position = "bottom",
+    axis.text = element_text(size = 8),
+    axis.title = element_text(size = 14, face = "bold"),
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 8)
+  )
+```
+
+The sweet snacks sector, characterized by its labor-intensive nature, is especially vulnerable to these trends. The consistent demand for higher labor input, as evidenced by the Snacks sector (C1072) employing more workers per company compared to other sectors, highlights the importance of managing labor costs and enhancing efficiency. Additionally, the sector's stable production cost index in recent years may reflect an increasing reliance on streamlined operations or scaling strategies to offset productivity declines.
+
+To address these pressures, the sector must focus on strategic investments in process optimization and technology integration. Automation and advanced production methods can help mitigate labor cost volatility and improve productivity. Furthermore, enhancing operational efficiency can enable companies to achieve economies of scale, ensuring competitiveness and profitability in a fluctuating economic environment.
+
+In conclusion, the relationship between labor costs, production costs, and productivity highlights the need for proactive measures to sustain growth. For the sweet snacks industry, balancing these factors is essential to maintaining resilience, attracting investment, and adapting to evolving market demands. The insights from these trends emphasize the importance of innovation and resource optimization in securing long-term success.
+
+## C4 Index {.unnumbered}
+
+Another useful item to analyze the supply side is the C4 index, which is a measure of market concentration, representing the total market share held by the top four companies within a given industry. A higher C4 Index indicates a more concentrated market, where a few firms control a larger portion of the market, while a lower C4 Index suggests a more competitive market with a more even distribution of market share among companies
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(readxl)
+C4_Index <- read_excel("~/Desktop/uni/year 2/Market Analysis/datasets-2/C4 Index.xlsx")
+ggplot(C4_Index, aes(x = Index, y = reorder(Country, Index), fill = Country)) +
+  geom_bar(stat = "identity", color = "black", width = 0.7) +
+  geom_text(aes(label = paste0(round(Index, 1), "%")), 
+            position = position_stack(vjust = 0.5), 
+            size = 3.5) +
+  facet_wrap(~ Year, ncol = 1, scales = "free_y") +
+  labs(
+    title = "C_4 Index",
+    subtitle = "Cross-country comparison",
+    x = "%",
+    y = "Country",
+    caption = "Source: Euromonitor/Passport"
+  ) +
+  theme_minimal() +
+theme(
+    plot.title = element_text(size = 16, face = "bold", family = "serif", hjust = 0.5),
+    plot.subtitle = element_text(size = 12, family = "serif", hjust = 0.5),
+    strip.background = element_rect(fill = "white"),
+    strip.text = element_text(face = "bold", color = "black"),
+    plot.caption = element_text(hjust = 1, vjust = 1, size = 8, face = "italic"),
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    axis.text.y = element_text(size = 10),
+    legend.position = "none"
+  ) +
+  scale_fill_manual(values = c(
+    "France" = "purple",
+    "Greece" = "red",
+    "Austria" = "steelblue",
+    "Italy" = "mediumseagreen",
+    "Spain" = "lightgreen",
+    "Germany" = "yellow",
+    "Portugal" = "gold"
+  ))
+
+```
+
+In the context of Spain, the data reveals a relatively stable market concentration, with a decline in the C4 Index from 2015 to 2023. This suggests that while leading firms continue to dominate the market, there is room for smaller players to capture share, indicating a balanced competitive landscape.
+
+The decline in Spain’s market concentration signals a gradual shift towards greater competition. Larger companies still hold significant control, but the decrease in concentration points to opportunities for new entrants and smaller businesses to establish a foothold. This evolving dynamic could lead to increased innovation, more consumer choices, and potentially more competitive pricing in the future.
+
+While Spain’s market remains less fragmented than countries like Germany or Portugal, the steady decline in concentration suggests a trend towards a more open market. This trend could create both challenges and opportunities for businesses operating in Spain, encouraging them to adapt their strategies to maintain market share amidst growing competition.
+
+For investors and policymakers, the shift in Spain’s market structure is noteworthy. A more competitive environment may signal increased innovation and consumer benefits, while the continuing presence of dominant players suggests the potential for stable profits in certain sectors. Understanding these trends is key to making informed investment and regulatory decisions in Spain’s evolving market landscape.
+
+## Modern Distribution Channels{.unnumbered}
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(readxl)
+Retail_Channels <- read_excel("~/Desktop/uni/year 2/Market Analysis/datasets-2/Retail Channels.xlsx")
+ggplot(Retail_Channels, aes(x = factor(Year), y = Shares, fill = Retail_Channel)) +
+  geom_bar(stat = "identity", color = "black") +  
+  geom_text(aes(label = round(Shares, 1)), position = position_stack(vjust = 0.5), size = 3.5) +
+  labs(
+    title = "Modern distribution channels",
+    subtitle = "Time evolution",
+    x = "Year",
+    y = "%",
+    fill = NULL,
+    caption = "Source: Euromonitor/Passport"  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 16, face = "bold",family = "serif", hjust = 0.5),
+    plot.subtitle = element_text(size = 12, family = "serif", hjust = 0.5),
+    axis.title.x = element_text(size = 12),
+    axis.title.y = element_text(size = 12),
+ axis.text.x = element_text(angle = 45, hjust = 1, size = 10),
+    axis.text.y = element_text(size = 10),
+    legend.position = "right",
+    plot.caption = element_text(hjust = 1, size = 10, face = "italic")
+  ) +
+  scale_fill_manual(values = c(
+    "Convenience Stores" = "salmon",
+    "Discounters" = "orange",
+    "Small Local Grocers" = "green",
+    "Hypermarkets" = "skyblue",
+    "Supermarkets" = "orchid"
+  ))
+
+```
+
+Supermarkets have consistently been the leading distribution channel for sweet snacks in Spain, steadily increasing their dominance over the years. Small local grocers, once holding a significant share of the market, experienced a decline during the COVID-19 pandemic and have only slightly recovered in recent years. Hypermarkets have maintained a notable position in the market, though their share has seen minor fluctuations. Discounters have shown gradual growth over time, apart from a brief dip during the pandemic, while convenience stores have consistently held a small and shrinking share of the market.
+
+In summary, supermarkets are consolidating their position as the primary channel for sweet snack distribution in Spain, while smaller formats such as local grocers and convenience stores continue to lose market presence.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--chapter:end:03-parts.Rmd-->
+
+# Company  {.unnumbered}
+## A brief history {.unnumbered}
+
+Founded in 1892 in Aguilar de Campo, Galletas Gullón was initially a small, family-owned bakery, producing traditional Spanish biscuits. Over time, the company adapted to changing consumer needs, becoming one of the first in Spain to develop healthy products like sugar-free and high-fiber biscuits.
+
+As demand grew, Gullón invested significantly in research and development to broaden its product range, introducing new lines in microsectors like gluten-free, organic, and whole-grain diets and modernizing its operations to increase production efficiency, allowing it to compete in international markets.
+
+Sustainability also became a priority for Gullón, with initiatives aimed at reducing environmental impact. The company’s production plants are designed for energy efficiency while the packaging has migrated towards eco-friendly sustainable materials. These efforts support Gullón’s expansion into over 100 countries, helping the company maintain a competitive position globally.
+
+Today, Galletas Gullón is still family-owned, managed by a board who prioritize quality and tradition while driving international growth. 
+
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(tidyverse)
+library(readxl)
+
+C_SHARES <- read_excel("~/Desktop/uni/year 2/Market Analysis/datasets/C.SHARES.xlsx")
+
+
+C_SHARES <- C_SHARES %>%
+  mutate(`2023` = as.numeric(`2023`)) %>%
+  filter(!is.na(`2023`))  
+
+
+C_SHARES %>%
+  arrange(desc(`2023`)) %>%  
+  slice(4:13) %>%          
+  ggplot(aes(x = reorder(`Company Name`, -`2023`), y = `2023`, fill = `Company Name`)) +
+  geom_bar(stat = "identity", show.legend = FALSE) +  
+  geom_text(aes(label = round(`2023`, 1)), vjust = -0.3, size = 4) +  
+  labs(
+    title = "Sweet Biscuits, Snack Bars and Fruit Snacks market shares in 2023 (Top 10)", 
+    x = "Company Name", 
+    y = "Share (%)", 
+    caption = "Source: Passport/Euromonitor"
+  ) + 
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+         plot.title = element_text(size = 16, face = "bold",family = "serif", hjust = 0.5))
+```
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(tidyverse)
+library(readxl)
+
+
+C_SHARES <- read_excel("~/Desktop/uni/year 2/Market Analysis/datasets/C.SHARES.xlsx")
+
+gullon_data <- C_SHARES |> 
+  filter(`Company Name` == "Galletas Gullón SA") |>  
+  pivot_longer(cols = `2015`:`2023`, 
+               names_to = "Year", 
+               values_to = "Share") |>
+  mutate(Share = as.numeric(Share))
+
+gullon_data <- gullon_data |> filter(!is.na(Share))
+
+ggplot(gullon_data, aes(x = Year, y = Share, group = 1)) + 
+  geom_line(color = "red", size = 1) +               
+  geom_point(color = "red", size = 4) +   
+  scale_y_continuous(labels = function(x) round(x, 1)) +
+  labs(title = "Market share of Galletas Gullón SA (2015-2023)", 
+       x = "Year", 
+       y = "Share (%)",
+       caption = "Source: Passport/Euromonitor") + 
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+         plot.title = element_text(size = 16, face = "bold",family = "serif", hjust = 0.5))
+
+```
+
+
+```{r results='hide', message=FALSE, warning=FALSE}
+
+turnover_data <- data.frame(
+  Year = c(2018, 2019, 2020, 2021, 2022, 2023),
+  Turnover = c(360, 387, 408, 419, 531, 630)
+)
+
+
+time_range <- range(turnover_data$Year)
+
+
+ggplot(turnover_data, aes(x = Year, y = Turnover, label = Turnover)) +
+  geom_col(colour = "black", alpha = 0.8, fill = brewer.pal(3, "Set2")[1]) +
+  geom_text(position = position_stack(vjust = 0.5), size = 4, color = "black") +
+  scale_x_continuous(breaks = seq(time_range[1], time_range[2], by = 1)) +
+  theme_bw() +
+  labs(
+    title = "Turnover by Year",
+    subtitle = "Galletas Gullòn SA",
+    y = "Turnover (million euros)",
+    x = "Year",
+    caption = "Source: Galletas Gullòn SA Sustainability report 2023"
+  ) + 
+  theme(
+    legend.position = "none", 
+    axis.text = element_text(size = 8), 
+    axis.title = element_text(size = 14, face = "bold"), 
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
+     plot.title = element_text(size = 16, face = "bold",family = "serif", hjust = 0.5)
+  )
+
+```
+
+Galletas Gullón SA has solidified its position as a significant player in the Sweet Biscuits, Snack Bars, and Fruit Snacks market over the last 10 years. It has managed to grow its market share and brand recognition, establishing itself as a strong competitor among larger companies. However, while Gullón’s market share rose considerably between 2018 and 2021, it has since leveled off, indicating that the company may be reaching a maximum in terms of market expansion. This suggests that while Gullón has effectively captured a strong and loyal consumer base, further growth may require some adjustments in terms of strategy and innovation.
+
+## Company’s performance {.unnumbered}
+
+The company’s financial performance, on the other hand, has seen impressive increases in revenue in recent years, suggesting that Gullón is well-aligned with consumer trends and demand within its segment. This could be mainly thanks to its effective product positioning, with focus on quality and health-oriented snacks, following the healthy trends of the latest years. The rise in revenue  also underlines successful expansion efforts, whether through geographic reach, diversified product lines, or tapping into trends like healthy snacking or convenience foods.
+
+Going forward, Galletas Gullón has opportunities to build on this growth. Expanding its product range to include items that appeal to current consumer preferences, like plant-based, low-sugar, or sustainably sourced snacks, could help differentiate it from competitors and reach new audiences. Additionally, as larger companies continue to dominate market share, Gullón might benefit from targeting specific niches, investing in marketing that strengthens its brand values, or even pursuing partnerships to widen its reach. Operationally, maintaining cost efficiency while scaling production will be essential for keeping margins healthy as demand grows.
+
+In summary, while Galletas Gullón SA has successfully established itself within a competitive market, future growth may depend on a balanced approach that combines product innovation, strategic marketing, and efficiency improvements. This approach will be crucial for solidifying its market position and capturing further opportunities in an increasingly health-conscious and quality-driven consumer landscape.
+
+## SWOT analysis {.unnumbered}
+
+To gain a deeper understanding of the company's performance, conducting a SWOT analysis can be highly valuable. This strategic planning tool helps assess the Strengths, Weaknesses, Opportunities, and Threats associated with a business, project, or organization, providing insights that inform decision-making and drive long-term success.
+
+**Strengths**
+
+1. **Brand**: Gullón’s long-standing presence in the market (over 130 years) has established it as a trustworthy brand with a solid reputation.
+2. **Health-focused products**: the company focuses on healthy products, like sugar-free and high-fiber biscuits, which align well with the growing demand for healthier snacks.
+3. **Innovation**: Gullón has invested significantly in research and development of new products, particularly those related to dietary needs, such as gluten-free and high-protein biscuits.
+4. **Production facilities**: the company possesses modern facilities that ensure high-quality production and efficiency.
+5. **Export**: Gullón has a strong presence in international markets, with its products being exported to over 120 countries, and hence a reduced dependence on the Spanish market.
+
+**Weaknesses**
+
+1. **Diversification**: the main focus of the company is on the biscuits market. This limits product diversification and can expose Gullon to market fluctuations within the biscuit and snack industry.
+2. **High competition in the national market**: in Spain, Gullón faces strong competition from other established brands, both local (such as Adam Foods) and international (Nestlé, Mondelez).
+3. **Limited brand recognition in some international markets**: brand recognition in non-European markets could be improved.
+4. **Costs and prices**: health-focused products can require higher production costs. This may result in higher prices and in a reduction of price-sensitive customers.
+Opportunities
+
+**Opportunities**
+
+1. **Health Trends**: the increasing global demand for healthy, low-sugar, and allergen-free foods could be pursued by sticking to this line of production and innovation.
+2. **New Snack Categories**: Gullón could explore new product lines in other snack categories, such as granola bars and rice cakes, to reduce its reliance on biscuits.
+3. **E-commerce**: the company could focus on the creation of an online shop to potentially increase its digital sales channels both domestically and internationally.
+4. **Emerging Economies**: expanding business into emerging markets where the demand for Western snacks and biscuits is rising, such as in Asia, Latin America, and Africa could be 
+
+**Threats**
+
+1. **Competition from Global Brands**: multinational companies, like Mondelez, Nestlé, and Kellogg’s, have substantial market share and resources, making the competition fierce, especially in international markets.
+2. **Fluctuating Raw Material Prices**: the cost of key ingredients like wheat, sugar, and chocolate can vary significantly, impacting profitability, especially in periods of strong inflation.
+3. **Economic Uncertainty**: macroeconomic downturns could lead to a reduction in consumer spending, particularly high quality and health-focused products.
+4. **Regulations and Requirements**: increasing regulations related to food labeling, nutrition claims, and product formulations could require higher production costs.
+5. **Environmental Pressures**: issues related to water usage, waste management, and carbon footprint could be challenging if the company is unable to meet sustainability expectations.
+6. **Greenwashing**: moving towards eco-friendly and biodegradable policies like packaging or production lines can attract environmentally conscious consumers. Anyway, any form of greenwashing should be avoided.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--chapter:end:04-citations.Rmd-->
+
+# Conclusions {.unnumbered}
+
+The sweet biscuits, snack bars, and fruit snacks market in Spain presents a dynamic landscape shaped by evolving economic conditions, consumer preferences, and demographic trends. The market's stability and growth are underpinned by Spain's increasing GDP per capita, population growth, and gradual recovery from the COVID-19 pandemic. However, this growth is moderated by the interplay of factors such as unemployment rates, regional disparities, and shifting consumer priorities towards healthier and sustainable food options.
+
+The analysis highlights several key trends influencing the market. First, health-consciousness has significantly impacted consumer behavior, driving demand for low-sugar, high-fiber, and plant-based snack options. This shift has been particularly noticeable in the declining market share of traditional sweet biscuits and the rising popularity of fruit snacks and health-oriented alternatives. Meanwhile, snack bars have maintained a stable niche due to their convenience and appeal to health-aware consumers.
+
+Economic indicators such as GDP growth and unemployment rates reveal a nuanced relationship with snack consumption. While increasing GDP often correlates with higher discretionary spending, the market demonstrates that consumer behavior is influenced by broader socio-economic and psychological factors, especially during crises like the pandemic. The period of lockdowns witnessed a temporary surge in snack consumption, driven by stress and home confinement, which subsequently stabilized as normalcy returned.
+
+From a supply perspective, the industry has shown resilience despite challenges like inflation, fluctuating raw material costs, and supply chain disruptions. The sector’s ability to maintain competitive pricing relative to neighboring countries underscores its adaptability. The growth in employment within food manufacturing and the steady expansion of active enterprises reflect a robust production base capable of meeting evolving consumer demands.
+
+The market's competitive landscape is also noteworthy. While larger players dominate, the gradual decline in market concentration (as evidenced by the C4 Index) indicates increasing opportunities for smaller enterprises. This trend, coupled with Spain's relatively lower snack prices compared to other European countries, suggests a balanced market that encourages innovation and competition.
+
+Galletas Gullón, as a case study, exemplifies a successful strategy in navigating these dynamics. With its focus on health-oriented products, sustainability, and innovation, the company has established a strong market position both domestically and internationally. However, further growth will require diversification into new product categories, leveraging digital channels like e-commerce, and expanding into emerging markets.
+
+Looking ahead, the Spanish snack market offers substantial opportunities for growth. Rising health awareness, the shift towards plant-based diets, and increasing demand for convenience foods create a favorable environment for innovation. At the same time, challenges such as economic uncertainty, rising production costs, and stringent regulatory requirements necessitate strategic planning and operational efficiency.
+
+In conclusion, the Spanish snack market is poised for steady growth, driven by favorable socio-economic trends and changing consumer preferences. Companies that align with health and sustainability trends, innovate their product offerings, and adapt to competitive pressures will be well-positioned to thrive. The balance between indulgence and health-conscious choices remains central to capturing market share in this evolving landscape.
+
+
+
+<!--chapter:end:05-blocks.Rmd-->
+
+# Appendix{.unnumbered}
+
+## Sweet snacks consumption volumes {.unnumbered}
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(readxl)
+library(tidyverse)
+library(RColorBrewer)
+
+DFR <- read_excel("~/Desktop/uni/year 2/Market Analysis/datasets/DFR.xlsx")
+
+
+DFR <- DFR |> 
+  pivot_longer(names_to = "Year", values_to = "Volume", `2014`:`2023`) |>
+  mutate(Volume = as.numeric(Volume)) |>
+  filter(!is.na(Volume))  # Remove rows with NA Volume
+
+time_range <- c(2014, 2023)  # Define the time range
+
+# Plot
+DFR |> 
+  filter(Category == "Sweet Biscuits, Snack Bars and Fruit Snacks" & 
+           Geography == "Spain" & 
+           `Data Type` == "Total Volume" & 
+           Year <= time_range[2] & 
+           Year >= time_range[1]) |>
+  ggplot(aes(x = as.integer(Year), y = Volume, label = round(Volume, 1))) +
+  geom_col(colour = "black", alpha = .8, fill = brewer.pal(3, "Set2")[1]) +
+  geom_text(position = position_stack(vjust = 0.5), size = 3) +
+  scale_fill_brewer(palette = "Set2") +
+  scale_x_continuous(breaks = time_range[1]:time_range[2], minor_breaks = time_range[1]:time_range[2]) +
+  theme_bw() +
+  labs(
+    title = "Sweet Snacks: Volumes",
+    subtitle = "Spain",
+    y = "Tonnes ('000)",
+    x = "Year",
+    fill = "Volume",
+    caption = "Source: Passport/Euromonitor"
+  ) + 
+  theme(
+    legend.position = "right",
+    axis.text = element_text(size = 8),
+    axis.title = element_text(size = 14, face = "bold"),
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
+    plot.title = element_text(size = 16, face = "bold",family = "serif", hjust = 0.5)
+  )
+```
+
+## Sweet Snacks Values {.unnumbered}
+
+```{r  results='hide', message=FALSE, warning=FALSE}
+library(tidyverse)
+library(readxl)
+library(RColorBrewer)
+
+# Load data
+DFR <- read_excel("~/Desktop/uni/year 2/Market Analysis/datasets/DFR.xlsx")
+
+# Define time range
+time_range <- c(2014, 2023)
+
+# Process and visualize data
+DFR |> 
+  pivot_longer(names_to = "Year", values_to = "Value", `2014`:`2023`) |>
+  # Convert `Value` to numeric, coercing non-numeric entries to NA
+  mutate(Value = as.numeric(Value)) |>
+  # Filter out rows with NA in `Value`
+  filter(!is.na(Value)) |>
+  # Filter the data for the specified conditions
+  filter(Category == "Sweet Biscuits, Snack Bars and Fruit Snacks" & 
+           Geography == "Spain" & 
+           `Data Type` == "Retail Value RSP" & 
+           Year <= time_range[2] & 
+           Year >= time_range[1]) |>
+  # Create the plot
+  ggplot(aes(x = as.integer(Year), y = Value, label = round(Value, 1))) +
+  geom_col(colour = "black", alpha = .8, fill = brewer.pal(3, "Set2")[1]) +
+  geom_text(position = position_stack(vjust = 0.5), size = 3) +
+  scale_fill_brewer(palette = "Set2") +
+  scale_x_continuous(breaks = time_range[1]:time_range[2], minor_breaks = time_range[1]:time_range[2]) +
+  theme_bw() +
+  labs(
+    title = "Sweet Snacks: Values",
+    subtitle = "Spain",
+    y = "Euro (Mil.)",
+    x = "Year",
+    fill = "Value",
+    caption = "Source: Passport/Euromonitor"
+  ) + 
+  theme(
+    legend.position = "right",
+    axis.text = element_text(size = 8),
+    axis.title = element_text(size = 14, face = "bold"),
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
+    plot.title = element_text(size = 16, face = "bold",family = "serif", hjust = 0.5)
+  )
+```
+
+## Values Cross Country {.unnumbered}
+
+```{r  results='hide', message=FALSE, warning=FALSE}
+library(tidyverse)
+library(readxl)
+
+# Load data
+DFR <- read_excel("~/Desktop/uni/year 2/Market Analysis/datasets/DFR.xlsx")
+
+# Define selected countries and time range
+countries_sel <- c("Spain", "Italy", "France", "Germany")
+time_range <- c(2014, 2023)
+
+# Process and plot data
+DFR |> 
+  pivot_longer(names_to = "Year", values_to = "Value", 6:15) |> 
+  # Convert Value to numeric and handle non-numeric entries
+  mutate(Value = as.numeric(Value)) |> 
+  # Remove rows with NA in Value
+  filter(!is.na(Value)) |> 
+  # Filter for the specified conditions
+  filter(Category == "Sweet Biscuits, Snack Bars and Fruit Snacks" & 
+           Geography %in% countries_sel & 
+           `Data Type` == "Retail Value RSP" & 
+           Year <= time_range[2] & 
+           Year >= time_range[1]) |> 
+  # Group by Geography and calculate the fixed index
+  group_by(Geography) |> 
+  mutate(Fixed = (Value / Value[Year == time_range[1]]) * 100) |> 
+  # Plot
+  ggplot(aes(x = as.integer(Year), y = Fixed, label = round(Fixed, 1), fill = Geography, color = Geography)) +
+  geom_hline(yintercept = 100, color = "blue", linetype = 2) + 
+  geom_line(alpha = .6, size = 1) + 
+  geom_point(alpha = 1, pch = 21, size = 3, fill = "white") + 
+  geom_text(size = 2.8) +
+  scale_color_brewer(palette = "Set2") + 
+  scale_x_continuous(breaks = time_range[1]:time_range[2], minor_breaks = time_range[1]:time_range[2]) + 
+  theme_bw() + 
+  labs(
+    title = "Sweet Snacks: Values",
+    subtitle = paste(time_range[1], "-", time_range[2], ", Index (", time_range[1], "=100)", sep = ""),
+    y = "Index",
+    x = "Year",
+    color = "Country",
+    caption = "Source: Passport/Euromonitor"
+  ) + 
+  theme(
+    legend.position = "right",
+    axis.text = element_text(size = 8),
+    axis.title = element_text(size = 14, face = "bold"),
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
+    plot.title = element_text(size = 16, face = "bold",family = "serif", hjust = 0.5)
+  )
+```
+
+## Average Retail Price {.unnumbered}
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(tidyverse)
+library(readxl)
+
+# Load data
+DFR <- read_excel("~/Desktop/uni/year 2/Market Analysis/datasets/DFR.xlsx")
+
+# Define selected countries and time range
+countries_sel <- c("Spain", "Italy", "France", "Germany")
+time_range <- c(2014, 2023)
+
+# Join Value and Volume data
+prices <- full_join(
+  # Retail Value RSP
+  DFR |> 
+    pivot_longer(names_to = "Year", values_to = "Value", `2014`:`2023`) |> 
+    filter(Category == "Sweet Biscuits, Snack Bars and Fruit Snacks" & 
+           Geography %in% countries_sel & 
+           `Data Type` == "Retail Value RSP" & 
+           Year <= time_range[2] & 
+           Year >= time_range[1]),
+  # Retail Volume
+  DFR |> 
+    pivot_longer(names_to = "Year", values_to = "Volume", `2014`:`2023`) |> 
+    filter(Category == "Sweet Biscuits, Snack Bars and Fruit Snacks" & 
+           Geography %in% countries_sel & 
+           `Data Type` == "Retail Volume" & 
+           Year <= time_range[2] & 
+           Year >= time_range[1]),
+  by = c("Geography", "Year")
+) |> 
+  # Select relevant columns and convert Value and Volume to numeric
+  select(Geography, Year, Value, Volume) |> 
+  mutate(
+    Value = as.numeric(Value), 
+    Volume = as.numeric(Volume)
+  ) |> 
+  # Remove rows with NA in Value or Volume
+  filter(!is.na(Value) & !is.na(Volume)) |> 
+  # Calculate Average Price
+  mutate(Avg_Price = round(Value / Volume, 3))
+
+# Calculate Fixed Index and Plot
+prices |> 
+  group_by(Geography) |> 
+  mutate(Fixed = (Avg_Price / Avg_Price[Year == time_range[1]]) * 100) |> 
+  filter(Geography == "Spain") |> 
+  ggplot(aes(x = as.integer(Year), y = Fixed, label = round(Fixed, 1))) +
+  geom_hline(yintercept = 100, color = "blue", linetype = 2) +
+  geom_line(alpha = .6, size = 1, color = brewer.pal(3, "Set2")[1]) +
+  geom_point(alpha = 1, pch = 21, size = 10, fill = "white", color = brewer.pal(3, "Set2")[2]) +
+  geom_text(size = 3) +
+  scale_x_continuous(breaks = time_range[1]:time_range[2], minor_breaks = time_range[1]:time_range[2]) +
+  theme_bw() +
+  labs(
+    title = "Sweet Snacks: Average Retail Price",
+    subtitle = paste(time_range[1], "-", time_range[2], ", Index (", time_range[1], "=100)", sep = ""),
+    y = "Index",
+    x = "Year",
+    caption = "Source: Passport/Euromonitor"
+  ) +
+  theme(
+    legend.position = "right",
+    axis.text = element_text(size = 8),
+    axis.title = element_text(size = 14, face = "bold"),
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
+    plot.title = element_text(size = 16, face = "bold",family = "serif", hjust = 0.5)
+  )
+```
+
+
+## Employees per Company {.unnumbered}
+
+```{r results='hide', message=FALSE, warning=FALSE}
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+
+# Define the data frame based on the values from your table
+data <- data.frame(
+  Sector = c("C", "C10", "C107", "C1072"),
+  `X2014` = c(10.3, 13.8, 7.3, 17.8),
+  `X2015` = c(10.6, 14.2, 8.0, 27.0),
+  `X2016` = c(11.1, 15.0, 8.4, 28.9),
+  `X2017` = c(11.4, 15.2, 8.5, 28.6),
+  `X2018` = c(11.7, 15.5, 8.4, 26.9),
+  `X2019` = c(12.1, 16.0, 8.2, 26.8),
+  `X2020` = c(12.1, 16.3, 8.3, 26.2),
+  `X2021` = c(12.0, 16.0, 8.0, 24.0),
+  `X2022` = c(12.0, 17.0, 9.0, 24.0)
+)
+
+# Convert the data to long format for ggplot2 and remove "X" prefix for Year
+data_long <- data %>%
+  pivot_longer(cols = starts_with("X"), names_to = "Year", values_to = "Employees") %>%
+  mutate(Year = as.numeric(sub("X", "", Year)))  # Remove "X" prefix for year
+
+# Rename the sectors for better labeling in the plot
+data_long$Sector <- factor(data_long$Sector, 
+                           levels = c("C", "C10", "C107", "C1072"),
+                           labels = c("Manufacturing (C)", "Food (C10)", "Bakery (C107)", "Snacks (C1072)"))
+
+# Create the bar plot
+ggplot(data_long, aes(x = Year, y = Employees, fill = Sector)) +
+  geom_bar(stat = "identity", position = "dodge", color = "black") +
+  labs(
+    title = "Employees per company", 
+    subtitle = "Index (2014=100)",
+    x = "Year",
+    y = "Employees",  
+    caption = "Source: Eurostat (sbs_na_ind_r2 V92100, sbs_ovw_act EMP_ENT_NR)"
+  ) +
+  scale_fill_manual(values = c("#FBB4AE", "#B3CDE3", "#CCEBC5", "#DECBE4")) +  # Custom pastel colors
+  theme_minimal() +
+  theme(
+   plot.title = element_text(size = 16, face = "bold",family = "serif", hjust = 0.5),
+    plot.subtitle = element_text(size = 12),
+    axis.title = element_text(size = 14),
+    axis.text = element_text(size = 12),
+    legend.title = element_text(size = 12),
+    legend.text = element_text(size = 10)
+  ) +
+  scale_x_continuous(breaks = seq(2014, 2022, 1), labels = 2014:2022)
+```
+## Hours worked per Employee {.unnumbered}
+
+```{r results='hide', message=FALSE, warning=FALSE}
+# Load necessary libraries
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+# Define the data frame with numeric values
+data <- data.frame(
+  Sector = c("Manufacturing (C)", "Food (C10)", "Bakery (C107)", "Snacks (C1072)"),
+  X2014 = c(2766894954, 513987350, 116232580, 19982122),
+  X2015 = c(2864272194, 526314623, 121161125, 22470467),
+  X2016 = c(2939282644, 546624913, 122534892, 24352665),
+  X2017 = c(3053113985, 572559576, 127695448, 24461997),
+  X2018 = c(3221144410, 611677181, 137020267, 25780962),
+  X2019 = c(3292048841, 644350490, 140249232, 25607635),
+  X2020 = c(3027884123, 622086117, 132787550, 24604073),
+  X2021 = c(3292431439, 662829683, 142132184, 25563645),
+  X2022 = c(3344290214, 690974607, 145767679, 25470737)
+)
+
+data$Sector <- factor(data$Sector, levels = c("Manufacturing (C)", "Food (C10)", "Bakery (C107)", "Snacks (C1072)"))
+
+# Calculate the index based on 2014 values
+data_indexed <- data %>%
+  rowwise() %>%
+  mutate(across(X2014:X2022, ~ (.x / X2014) * 100)) %>%
+  ungroup()
+
+# Reshape the data to long format for plotting
+data_long <- data_indexed %>%
+  pivot_longer(cols = starts_with("X"), names_to = "Year", values_to = "Index") %>%
+  mutate(Year = as.numeric(sub("X", "", Year)))  # Remove "X" prefix for year
+
+
+
+ggplot(data_long, aes(x = Year, y = Index, color = Sector, group = Sector)) +
+  geom_line(size = 1) +
+   geom_point(size = 3, alpha = 0.7, shape = 21, fill = "white", stroke = 0.8) +
+  scale_x_continuous(breaks = 2014:2022) +
+  scale_color_manual(values = c("#FFB3BA", "#FFDFBA", "#BAE1FF", "#B8E3B8")) +
+  labs(title = "Hours worked per employee",
+       subtitle = "Index (2014=100)",
+       x = "Year",
+       y = "Index",
+       caption = "Source: Eurostat (sbs_na_ind_r2 V1615, sbs_ovw_act HW_NR)") +
+  theme_minimal() +
+  theme(legend.title = element_text(size = 10),
+        legend.text = element_text(size = 9),
+        plot.title = element_text(size = 16, face = "bold",family = "serif", hjust = 0.5))
+
+```
+## Average Cost of Personnel {.unnumbered}
+
+```{r results='hide', message=FALSE, warning=FALSE}
+# Load required libraries
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+
+# Create the data frames
+dataV16130 <- data.frame(
+  Sector = c("Manufacturing (C)", "Food (C10)", "Bakery (C107)", "Snacks (C1072)"),
+  `X2014` = c(1612089, 292631, 66616, 14741),
+  `X2015` = c(1664901, 300534, 69393, 15130),
+  `X2016` = c(1748900, 323660, 75930, 15690),
+  `X2017` = c(1811226, 338151, 79277, 16213),
+  `X2018` = c(1911633, 360545, 84947, 16224),
+  `X2019` = c(1959494, 380634, 87121, 15326),
+  `X2020` = c(1941088, 384927, 86530, 15228)
+)
+
+dataV13320 <- data.frame(
+  Sector = c("Manufacturing (C)", "Food (C10)", "Bakery (C107)", "Snacks (C1072)"),
+  `X2014` = c(46475.90, 6727.30, 1234.80, 278.0),
+  `X2015` = c(47835.60, 6911.20, 1323.60, 305.3),
+  `X2016` = c(49573.20, 7200.80, 1373.40, 330.6),
+  `X2017` = c(51890.30, 7642.40, 1472.60, 340.2),
+  `X2018` = c(56432.80, 8499.60, 1636.00, 362.4),
+  `X2019` = c(59006.30, 9013.10, 1680.00, 359.5),
+  `X2020` = c(57151.60, 9089.40, 1618.40, 375.7)
+)
+
+# Compute the ratio
+ratio_data <- (dataV13320[-1] / dataV16130[-1]) * 1000  # Exclude 'Sector' column and multiply by 1000 for EUR (000)
+ratio_data$Sector <- dataV16130$Sector  # Re-add Sector column
+
+# Reshape data for plotting
+ratio_data_long <- ratio_data %>%
+  pivot_longer(cols = starts_with("X"), names_to = "Year", values_to = "Ratio") %>%
+  mutate(Year = as.numeric(sub("X", "", Year)))
+
+# Set the order of the Sector factor levels for plotting
+ratio_data_long$Sector <- factor(ratio_data_long$Sector, 
+                                 levels = c("Manufacturing (C)", "Food (C10)", "Bakery (C107)", "Snacks (C1072)"))
+
+# Plot with updated colors and outline
+ggplot(ratio_data_long, aes(x = Year, y = Ratio, fill = Sector)) +
+  geom_bar(stat = "identity", position = "dodge", color = "black") +  # Add black outline to bars
+  scale_fill_manual(values = c("#FBB4AE", "#B3CDE3", "#CCEBC5", "#DECBE4")) +  # Updated colors based on screenshot
+  labs(
+    title = "Average Cost of Personnel",
+    subtitle = "Spain",
+    x = "Year",
+    y = "EUR (000)",  
+    caption = "Source: Eurostat (sbs_na_ind_r2 V13320/V16130)"
+  ) +
+  scale_x_continuous(breaks = seq(2014, 2020, 1)) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 16, face = "bold",family = "serif", hjust = 0.5), 
+    plot.subtitle = element_text(hjust = 0.5)
+  )
+```
+
+## Segments {.unnumbered}
+
+```{r results='hide', message=FALSE, warning=FALSE}
+# Load necessary libraries
+library(tidyverse)
+library(readxl)
+library(forcats)
+
+# Read the data
+DFR <- read_excel("~/Desktop/uni/year 2/Market Analysis/datasets/DFR.xlsx")
+
+# Define time range (replace these values with actual range from your data)
+time_range <- c(2014, 2023)
+
+# Wrangle data and plot
+DFR |>
+  pivot_longer(cols = `2014`:`2023`, names_to = "Year", values_to = "Value") |>
+  mutate(Value = as.numeric(Value)) |> # Convert to numeric
+  filter(Geography == "Spain", `Data Type` == "Retail Value RSP") |>
+  filter(Category %in% c("Fruit Snacks", "Snack Bars", "Sweet Biscuits")) |>
+  group_by(Geography, Year) |>
+  mutate(Tot_Value = sum(Value, na.rm = TRUE)) |> # Handle possible NA values
+  mutate(Share = (Value / Tot_Value) * 100) |>
+  mutate(Year = as.integer(Year)) |>
+  ggplot(aes(x = Year, y = Share, fill = fct_reorder(Category, Share))) +
+  geom_col(color = "black", alpha = 0.6, width = 1) +
+  geom_text(aes(label = paste0(round(Share, 1), "%")), 
+            position = position_stack(vjust = 0.5), size = 2) +
+  scale_x_continuous(breaks = seq(time_range[1], time_range[2]), 
+                     minor_breaks = seq(time_range[1], time_range[2])) +
+  theme_bw() +
+  scale_fill_brewer(palette = "Set2") +
+  labs(
+    title = "Sweet Snacks Segments",
+    subtitle = "Values, %",
+    x = "Year",
+    y = "%",
+    fill = "",
+    caption = "Passport/Euromonitor"
+  ) +
+  theme(
+    legend.position = "bottom",
+    legend.text = element_text(size = 6),
+    legend.key.size = unit(0.5, "cm"),
+    axis.text = element_text(size = 8),
+    axis.title = element_text(size = 14, face = "bold"),
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
+    plot.title = element_text(size = 16, face = "bold",family = "serif", hjust = 0.5)
+  )
+```
+
+## Subsegments {.unnumbered}
+
+```{r results='hide', message=FALSE, warning=FALSE}
+# Load necessary libraries
+library(tidyverse)
+library(readxl)
+library(forcats)
+
+# Load the data
+subsegments <- read_excel("~/Desktop/uni/year 2/Market Analysis/datasets/subsegments.xlsx")
+
+# Define time range (replace with your specific time range values)
+time_range <- c(2014, 2023)
+
+# Wrangle the data and plot
+subsegments %>%
+  pivot_longer(cols = `2014`:`2023`, names_to = "Year", values_to = "Value") %>%
+  mutate(Value = as.numeric(Value)) %>%  # Convert Value to numeric
+  filter(Geography == "Spain", 
+         `Data Type` == "Retail Value RSP", 
+         Year %in% time_range[1]:time_range[2]) %>%
+  filter(Category %in% c("Dried Fruit", "Processed Fruit Snacks", "Cereal Bars", 
+                         "Protein/Energy Bars", "Fruit and Nut Bars", 
+                         "Chocolate Coated Biscuits", "Cookies", 
+                         "Filled Biscuits", "Plain Biscuits", "Wafers")) %>%
+  mutate(Main_category = case_when(
+    Category %in% c("Dried Fruit", "Processed Fruit Snacks") ~ "Fruit Snacks",
+    Category %in% c("Cereal Bars", "Protein/Energy Bars", "Fruit and Nut Bars") ~ "Snack Bars",
+    TRUE ~ "Sweet Biscuits"
+  )) %>%
+  group_by(Geography, Year, Main_category) %>%
+  mutate(Tot_Value = sum(Value, na.rm = TRUE)) %>%  # Sum by group, ignoring NA values
+  ungroup() %>%
+  mutate(Share = (Value / Tot_Value) * 100) %>%  # Calculate percentage share
+  mutate(Year = as.integer(Year)) %>%  # Ensure Year is numeric for ggplot
+  drop_na(Share) %>%  # Remove rows with NA Share values
+  mutate(Category = fct_reorder(Category, Share, .fun = mean, na.rm = TRUE)) %>%  # Reorder categories
+  ggplot(aes(x = Year, y = Share, fill = Category)) +
+  geom_col(colour = "black", alpha = 0.6, width = 1) +
+  geom_text(aes(label = paste0(round(Share, 1), "%")), 
+            position = position_stack(vjust = 0.5), size = 2) +
+  scale_x_continuous(breaks = seq(min(time_range[1]), max(time_range[2]), by = 1)) +  # Continuous scale for years
+  facet_wrap(~Main_category, scales = "free_y") +
+  theme_bw() +
+  scale_fill_brewer(palette = "Set3") +
+  labs(
+    title = "Sweet Snacks Subsegments",
+    subtitle = "Values, %",
+    x = "Year",
+    y = "%",
+    fill = "",
+    caption = "Passport/Euromonitor"
+  ) +
+  theme(
+    legend.position = "bottom",
+    legend.text = element_text(size = 6),
+    legend.key.size = unit(0.5, "cm"),
+    axis.text = element_text(size = 8),
+    axis.title = element_text(size = 14, face = "bold"),
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
+    plot.title = element_text(size = 16, face = "bold",family = "serif", hjust = 0.5)
+  )
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--chapter:end:06-share.Rmd-->
+
+
+<!--chapter:end:07-references.Rmd-->
+
